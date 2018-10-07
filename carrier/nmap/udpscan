@@ -1,0 +1,19 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-09-25 15:52 CEST
+Nmap scan report for 10.10.10.105
+Host is up (0.045s latency).
+Not shown: 989 closed ports
+PORT      STATE         SERVICE
+9/udp     filtered      discard
+67/udp    open|filtered dhcps
+161/udp   open          snmp
+502/udp   filtered      mbap
+631/udp   filtered      ipp
+1054/udp  open|filtered brvread
+17424/udp filtered      unknown
+20449/udp filtered      unknown
+21060/udp filtered      unknown
+24606/udp filtered      unknown
+51255/udp filtered      unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 1109.39 seconds
+

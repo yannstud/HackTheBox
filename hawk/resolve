@@ -1,0 +1,5 @@
+ftp laisse access a anonymous
+# ftp 10.10.10.102
+on trouve le fichier .drupal.txt.enc
+.drupal.txt.enc: openssl enc'd data with salted password, base64 encoded
+# bruteforce-salted-openssl

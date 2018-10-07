@@ -1,0 +1,14 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-09-26 02:04 CEST
+Nmap scan report for 10.10.10.105
+Host is up (0.045s latency).
+
+PORT    STATE SERVICE
+161/udp open  snmp
+| snmp-info: 
+|   enterprise: pysnmp
+|   engineIDFormat: octets
+|   engineIDData: 77656201e83908
+|   snmpEngineBoots: 2
+|_  snmpEngineTime: 21m30s
+
+Nmap done: 1 IP address (1 host up) scanned in 0.57 seconds

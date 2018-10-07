@@ -1,0 +1,32 @@
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-06-12 13:24 CEST
+Nmap scan report for 10.10.10.75
+Host is up (0.068s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+80 open == site 10.10.10.75
+rien d'interessant ctrl + u indique <!-- /nibbleblog/ directory. Nothing interesting here! -->
+http://10.10.10.75/nibbleblog/
+http://10.10.10.75/nibbleblog/index.php?controller=blog&action=view&category=uncategorised
+
+code source 
+http://10.10.10.75/nibbleblog/content/private/plugins/my_image/
+
+faille nibbleblog
+
+admin
+nibbles
+
+load reverse shell depuis le plugin images
+
+password user dans /home/nibbler/user.txt
+b02ff32bb332deba49eeaed21152c8d8
+
+
+!!!!!!!!!!!!!!!!!!!
+lynis
+git clone https://github.com/CISOfy/lynis
+!!!!!!!!!!!!!!!!!!!
+

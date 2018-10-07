@@ -1,0 +1,2 @@
+# Nmap 7.70 scan initiated Sat Oct  6 13:30:36 2018 as: nmap -sU -oA activeUDP 10.10.10.100
+# Nmap done at Sat Oct  6 13:30:39 2018 -- 1 IP address (0 hosts up) scanned in 3.10 seconds

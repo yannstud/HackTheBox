@@ -1,0 +1,5 @@
+10.10.10.70/decode.php
+heartbleedbelievethehype
+
+get shell root
+tmux -S /.devs/dev_sess 

@@ -1,0 +1,12 @@
+on peut se connecter en ftp as anonymous
+on peut dl les 2 files 
+lire le .mdb avec : https://www.mdbopener.com/
+on trouve le mot de passe pour le zip et on dézippe
+et le transforme le .mbox
+
+The password for the “security” account has been changed to 4Cc3ssC0ntr0ller.  Please ensure this is passed on to your engineers.
+
+se connecter a telnet 10.10.10.98
+username : security
+password : 4Cc3ssC0ntr0ller
+

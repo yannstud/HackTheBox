@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Sat Sep 15 10:48:55 2018 as: nmap -sC -sV -oA waldo 10.10.10.87
+Host: 10.10.10.87 ()	Status: Up
+Host: 10.10.10.87 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.5 (protocol 2.0)/, 80/open/tcp//http//nginx 1.12.2/
+# Nmap done at Sat Sep 15 10:49:06 2018 -- 1 IP address (1 host up) scanned in 11.67 seconds

