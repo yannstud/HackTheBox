@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Internal Dev</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+<body>
+<div class="container wrapper">
+
+<p>Status of cache engine: Online</p>
+<h4>TCP socket test</h4>
+<form action="/socket">
+<input type="text" name="port" placeholder="TCP port"></input>
+<input type="text" name="cmd" placeholder="Line to send..."></input>
+<input type="submit" value="Submit"</input>
+</form>
+
+
+</div>
+</body>
+</html>

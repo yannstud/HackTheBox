@@ -1,0 +1,26 @@
+Utilisation : base64 [OPTION]... [FICHIER]
+Encoder ou décoder le FICHIER ou l'entrée standard en base64, vers la
+sortie standard.
+
+Sans FICHIER ou quand FICHIER est -, lire l'entrée standard.
+
+Les arguments obligatoires pour les options longues le sont aussi pour les
+options courtes.
+  -d, --decode          décoder les données
+  -i, --ignore-garbage  lors du décodage, ignorer les caractères non
+                          alphabétiques
+  -w, --wrap=COLS       effectuer la césure des lignes après COLS caractères
+                          (76 par défaut). Utilisez 0 pour désactiver la césure
+
+      --help     afficher l'aide et quitter
+      --version  afficher des informations de version et quitter
+
+Les données sont codées comme décrit pour l'alphabet base64 dans la RFC 4648.
+Lors du décodage, l'entrée peut contenir des sauts de lignes en plus des
+octets de l'alphabet base64 formel. Utilisez --ignore-garbage pour tenter de
+récupérer tout autre octet non alphabétique dans le flux codé.
+
+Aide en ligne de GNU coreutils : <https://www.gnu.org/software/coreutils/>
+Signalez les problèmes de traduction de « base64 » à : <traduc@traduc.org>
+Documentation complète à : <https://www.gnu.org/software/coreutils/base64>
+ou disponible localement via: info '(coreutils) base64 invocation'

