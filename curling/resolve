@@ -1,0 +1,20 @@
+sur index.php source code on peut voir secret.txt qui contient : le base64 de Curling2018!
+on peut aussi voir que floris (super user) a mis un article
+se connecter avec :
+floris
+Curling2018!
+
+http://10.10.10.150/index.php/component/users/?view=login&Itemid=101
+upload a reverse shell
+
+
+password trouvé apres decryptage du hexdump plusieurs dézip gunzip ...... du backup password found
+https://www.akashtrehan.com/writeups/OverTheWire/Bandit/level12/
+5d<wdCbdZu)|hChXll
+
+ssh floris@10.10.10.150
+password : 5d<wdCbdZu)|hChXll
+
+admin-area/input url="file://root/root.txt"
+cat report :))
+get rekt

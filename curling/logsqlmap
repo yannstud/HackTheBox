@@ -1,0 +1,14 @@
+POST /index.php/component/users/?task=user.login&Itemid=101 HTTP/1.1
+Host: 10.10.10.150
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: fr
+Accept-Encoding: gzip, deflate
+Referer: http://10.10.10.150/index.php/component/users/?view=login&Itemid=101
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 114
+Cookie: c0548020854924e0aecd05ed9f5b672b=16k66pbnuoh8c9r0is6ss64fbj; 99fb082d992a92668ce87e5540bd20fa=96cfgf5dilctmln9i85s3ortus
+Connection: close
+Upgrade-Insecure-Requests: 1
+
+username=admin&password=admin&return=aHR0cDovLzEwLjEwLjEwLjE1MC9pbmRleC5waHA%3D&c76e75e87052d3908bfca8ba1683b62b=1

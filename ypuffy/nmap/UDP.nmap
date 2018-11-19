@@ -1,0 +1,6 @@
+# Nmap 7.70 scan initiated Tue Oct 30 18:27:14 2018 as: nmap -sU -oA UDP 10.10.10.107
+Nmap scan report for 10.10.10.107
+Host is up (0.045s latency).
+All 1000 scanned ports on 10.10.10.107 are closed
+
+# Nmap done at Tue Oct 30 18:27:57 2018 -- 1 IP address (1 host up) scanned in 43.04 seconds

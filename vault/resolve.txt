@@ -1,0 +1,9 @@
+/sparklays : 403 
+/design : 403
+http://10.10.10.109/sparklays/design/changelogo.php
+
+can't upload a file .php then upload a file .php5
+get a shell and find ssh as dave
+ssh dave@10.10.10.109
+password : Dav3therav3123
+
