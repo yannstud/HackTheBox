@@ -1,0 +1,51 @@
+wget http://10.10.10.153/images/5.png
+
+Hi Servicedesk,
+I forgot the last charachter of my password. The only part I remembered is Th4C00lTheacha.
+Could you guys figure out what the last charachter is, or just reset it?
+Thanks,
+Giovanni
+
+mdp : Th4C00lTheacha#
+
+---- Entering directory: http://10.10.10.153/moodle/ ----
+==> DIRECTORY: http://10.10.10.153/moodle/admin/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/analytics/                                                                                                                                                              
+==> DIRECTORY: http://10.10.10.153/moodle/auth/                                                                                                                                                                   
+==> DIRECTORY: http://10.10.10.153/moodle/availability/                                                                                                                                                           
+==> DIRECTORY: http://10.10.10.153/moodle/backup/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/badges/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/blocks/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/blog/                                                                                                                                                                   
+==> DIRECTORY: http://10.10.10.153/moodle/cache/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/calendar/                                                                                                                                                               
+==> DIRECTORY: http://10.10.10.153/moodle/comment/                                                                                                                                                                
+==> DIRECTORY: http://10.10.10.153/moodle/course/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/error/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/files/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/filter/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/group/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/install/                                                                                                                                                                
+==> DIRECTORY: http://10.10.10.153/moodle/lang/                                                                                                                                                                   
+==> DIRECTORY: http://10.10.10.153/moodle/lib/                                                                                                                                                                    
+==> DIRECTORY: http://10.10.10.153/moodle/local/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/login/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/media/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/message/                                                                                                                                                                
+==> DIRECTORY: http://10.10.10.153/moodle/mod/                                                                                                                                                                    
+==> DIRECTORY: http://10.10.10.153/moodle/my/                                                                                                                                                                     
+==> DIRECTORY: http://10.10.10.153/moodle/notes/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/pix/                                                                                                                                                                    
+==> DIRECTORY: http://10.10.10.153/moodle/portfolio/                                                                                                                                                              
+==> DIRECTORY: http://10.10.10.153/moodle/question/                                                                                                                                                               
+==> DIRECTORY: http://10.10.10.153/moodle/rating/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/report/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/repository/                                                                                                                                                             
+==> DIRECTORY: http://10.10.10.153/moodle/rss/                                                                                                                                                                    
+==> DIRECTORY: http://10.10.10.153/moodle/search/                                                                                                                                                                 
+==> DIRECTORY: http://10.10.10.153/moodle/tag/                                                                                                                                                                    
+==> DIRECTORY: http://10.10.10.153/moodle/theme/                                                                                                                                                                  
+==> DIRECTORY: http://10.10.10.153/moodle/user/                                                                                                                                                                   
+==> DIRECTORY: http://10.10.10.153/moodle/webservice/                                                                                                                                                             
+
+

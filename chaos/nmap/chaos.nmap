@@ -1,0 +1,43 @@
+# Nmap 7.60 scan initiated Fri Jan  4 09:50:14 2019 as: nmap -sC -sV -oA chaos 10.10.10.120
+Nmap scan report for 10.10.10.120
+Host is up (0.030s latency).
+Not shown: 994 closed ports
+PORT      STATE SERVICE  VERSION
+80/tcp    open  http     Apache httpd 2.4.34 ((Ubuntu))
+|_http-server-header: Apache/2.4.34 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+110/tcp   open  pop3     Dovecot pop3d
+|_pop3-capabilities: TOP RESP-CODES STLS CAPA UIDL PIPELINING AUTH-RESP-CODE SASL
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+143/tcp   open  imap     Dovecot imapd (Ubuntu)
+|_imap-capabilities: LOGINDISABLEDA0001 more SASL-IR have LOGIN-REFERRALS ENABLE LITERAL+ listed IMAP4rev1 capabilities Pre-login ID IDLE STARTTLS OK post-login
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+993/tcp   open  ssl/imap Dovecot imapd (Ubuntu)
+|_imap-capabilities: OK SASL-IR have LOGIN-REFERRALS ENABLE LITERAL+ listed IMAP4rev1 capabilities Pre-login ID IDLE more AUTH=PLAINA0001 post-login
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+995/tcp   open  ssl/pop3 Dovecot pop3d
+|_pop3-capabilities: TOP RESP-CODES PIPELINING CAPA UIDL USER AUTH-RESP-CODE SASL(PLAIN)
+| ssl-cert: Subject: commonName=chaos
+| Subject Alternative Name: DNS:chaos
+| Not valid before: 2018-10-28T10:01:49
+|_Not valid after:  2028-10-25T10:01:49
+|_ssl-date: TLS randomness does not represent time
+10000/tcp open  http     MiniServ 1.890 (Webmin httpd)
+|_http-server-header: MiniServ/1.890
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan  4 09:51:00 2019 -- 1 IP address (1 host up) scanned in 46.77 seconds
