@@ -1,0 +1,21 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_3000.txt
+START_TIME: Sat Feb 23 21:10:47 2019
+URL_BASE: http://10.10.10.121:3000/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.10.121:3000/ ----
+
+-----------------
+END_TIME: Sat Feb 23 21:18:58 2019
+DOWNLOADED: 4612 - FOUND: 0

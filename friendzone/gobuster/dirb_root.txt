@@ -1,0 +1,28 @@
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root.txt
+START_TIME: Fri Feb 22 22:07:55 2019
+URL_BASE: http://10.10.10.123/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.10.123/ ----
++ http://10.10.10.123/index.html (CODE:200|SIZE:324)
++ http://10.10.10.123/robots.txt (CODE:200|SIZE:13)
++ http://10.10.10.123/server-status (CODE:403|SIZE:300)
+==> DIRECTORY: http://10.10.10.123/wordpress/
+
+---- Entering directory: http://10.10.10.123/wordpress/ ----
+(!) WARNING: Directory IS LISTABLE. No need to scan it.
+    (Use mode '-w' if you want to scan it anyway)
+
+-----------------
+END_TIME: Fri Feb 22 22:21:30 2019
+DOWNLOADED: 9224 - FOUND: 3

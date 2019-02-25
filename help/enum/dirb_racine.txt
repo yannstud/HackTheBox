@@ -1,0 +1,49 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_racine.txt
+START_TIME: Sat Feb 23 15:38:57 2019
+URL_BASE: http://10.10.10.121/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.10.121/ ----
++ http://10.10.10.121/index.html (CODE:200|SIZE:11321)
+==> DIRECTORY: http://10.10.10.121/javascript/
++ http://10.10.10.121/server-status (CODE:403|SIZE:300)
+==> DIRECTORY: http://10.10.10.121/support/
+
+---- Entering directory: http://10.10.10.121/javascript/ ----
+==> DIRECTORY: http://10.10.10.121/javascript/jquery/
+
+---- Entering directory: http://10.10.10.121/support/ ----
+==> DIRECTORY: http://10.10.10.121/support/controllers/
+==> DIRECTORY: http://10.10.10.121/support/css/
++ http://10.10.10.121/support/favicon.ico (CODE:200|SIZE:1150)
+==> DIRECTORY: http://10.10.10.121/support/images/
+==> DIRECTORY: http://10.10.10.121/support/includes/
++ http://10.10.10.121/support/index.php (CODE:200|SIZE:4453)
+==> DIRECTORY: http://10.10.10.121/support/js/
+==> DIRECTORY: http://10.10.10.121/support/uploads/
+==> DIRECTORY: http://10.10.10.121/support/views/
+
+---- Entering directory: http://10.10.10.121/javascript/jquery/ ----
++ http://10.10.10.121/javascript/jquery/jquery (CODE:200|SIZE:284394)
+
+---- Entering directory: http://10.10.10.121/support/controllers/ ----
+==> DIRECTORY: http://10.10.10.121/support/controllers/admin/
+==> DIRECTORY: http://10.10.10.121/support/controllers/client/
++ http://10.10.10.121/support/controllers/index.php (CODE:302|SIZE:0)
+==> DIRECTORY: http://10.10.10.121/support/controllers/staff/
+
+---- Entering directory: http://10.10.10.121/support/css/ ----
++ http://10.10.10.121/support/css/index.php (CODE:200|SIZE:0)
+
+---- Entering directory: http://10.10.10.121/support/images/ ----

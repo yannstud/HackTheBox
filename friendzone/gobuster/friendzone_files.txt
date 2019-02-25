@@ -1,0 +1,23 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: friendzone_files.txt
+START_TIME: Sat Feb 23 12:41:13 2019
+URL_BASE: https://uploads.friendzone.red/files/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: https://uploads.friendzone.red/files/ ----
++ https://uploads.friendzone.red/files/index.html (CODE:200|SIZE:0)
++ https://uploads.friendzone.red/files/note (CODE:200|SIZE:20)
+
+-----------------
+END_TIME: Sat Feb 23 12:50:00 2019
+DOWNLOADED: 4612 - FOUND: 2
