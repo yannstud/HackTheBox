@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Apr 14 01:35:24 2019 as: nmap -sC -sC -oA casadepapel 10.10.10.131
+Host: 10.10.10.131 ()	Status: Up
+Host: 10.10.10.131 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: closed (996)
+# Nmap done at Sun Apr 14 01:35:39 2019 -- 1 IP address (1 host up) scanned in 14.61 seconds

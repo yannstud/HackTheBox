@@ -1,4 +1,0 @@
-# Nmap 7.70 scan initiated Sat Nov 10 22:43:07 2018 as: nmap -sU -oA UDP 10.10.10.113
-Host: 10.10.10.113 ()	Status: Up
-Host: 10.10.10.113 ()	Status: Up
-# Nmap done at Sat Nov 10 22:43:14 2018 -- 1 IP address (1 host up) scanned in 7.30 seconds

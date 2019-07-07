@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Mon Jul  1 11:00:16 2019 as: nmap -sC -sV -p- -oA haystack_allports 10.10.10.115
+Host: 10.10.10.115 (haystack.htb)	Status: Up
+Host: 10.10.10.115 (haystack.htb)	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//http//nginx 1.12.2/, 9200/open/tcp//http//nginx 1.12.2/	Ignored State: filtered (65532)
+# Nmap done at Mon Jul  1 11:03:52 2019 -- 1 IP address (1 host up) scanned in 215.94 seconds

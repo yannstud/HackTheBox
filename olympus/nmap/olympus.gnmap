@@ -1,4 +1,0 @@
-# Nmap 7.70 scan initiated Wed Sep 19 23:26:32 2018 as: nmap -sC -sV -oA olympus 10.10.10.83
-Host: 10.10.10.83 ()	Status: Up
-Host: 10.10.10.83 ()	Ports: 22/filtered/tcp//ssh///, 53/open/tcp//domain//(unknown banner: Bind)/, 80/open/tcp//http//Apache httpd/, 1030/filtered/tcp//iad1///, 1040/filtered/tcp//netsaint///, 1688/filtered/tcp//nsjtp-data///, 2222/open/tcp//ssh//(protocol 2.0)/, 5633/filtered/tcp//beorl///, 5922/filtered/tcp//unknown///, 11110/filtered/tcp//sgi-soap///, 12174/filtered/tcp//unknown///, 28201/filtered/tcp//unknown///	Ignored State: closed (988)
-# Nmap done at Wed Sep 19 23:27:09 2018 -- 1 IP address (1 host up) scanned in 36.84 seconds

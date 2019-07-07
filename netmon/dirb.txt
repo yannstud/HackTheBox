@@ -1,0 +1,122 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Mon Mar 18 23:09:23 2019
+URL_BASE: http://10.10.10.152/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.10.152/ ----
+(!) WARNING: NOT_FOUND[] not stable, unable to determine correct URLs {30X}.
+    (Try using FineTunning: '-f')
++ http://10.10.10.152/.bash_history (CODE:302|SIZE:0)
++ http://10.10.10.152/.bashrc (CODE:302|SIZE:0)
++ http://10.10.10.152/.cache (CODE:302|SIZE:0)
++ http://10.10.10.152/.config (CODE:302|SIZE:0)
++ http://10.10.10.152/.cvs (CODE:302|SIZE:0)
++ http://10.10.10.152/.cvsignore (CODE:302|SIZE:0)
++ http://10.10.10.152/.forward (CODE:302|SIZE:0)
++ http://10.10.10.152/.git/HEAD (CODE:302|SIZE:0)
++ http://10.10.10.152/.history (CODE:302|SIZE:0)
++ http://10.10.10.152/.hta (CODE:302|SIZE:0)
++ http://10.10.10.152/.htaccess (CODE:302|SIZE:0)
++ http://10.10.10.152/.htpasswd (CODE:302|SIZE:0)
++ http://10.10.10.152/.listing (CODE:302|SIZE:0)
++ http://10.10.10.152/.listings (CODE:302|SIZE:0)
++ http://10.10.10.152/.mysql_history (CODE:302|SIZE:0)
++ http://10.10.10.152/.passwd (CODE:302|SIZE:0)
++ http://10.10.10.152/.perf (CODE:302|SIZE:0)
++ http://10.10.10.152/.profile (CODE:302|SIZE:0)
++ http://10.10.10.152/.rhosts (CODE:302|SIZE:0)
++ http://10.10.10.152/.sh_history (CODE:302|SIZE:0)
++ http://10.10.10.152/.ssh (CODE:302|SIZE:0)
++ http://10.10.10.152/.subversion (CODE:302|SIZE:0)
++ http://10.10.10.152/.svn (CODE:302|SIZE:0)
++ http://10.10.10.152/.svn/entries (CODE:302|SIZE:0)
++ http://10.10.10.152/.swf (CODE:302|SIZE:0)
++ http://10.10.10.152/.web (CODE:302|SIZE:0)
++ http://10.10.10.152/@ (CODE:302|SIZE:0)
++ http://10.10.10.152/_ (CODE:302|SIZE:0)
++ http://10.10.10.152/_adm (CODE:302|SIZE:0)
++ http://10.10.10.152/_admin (CODE:302|SIZE:0)
++ http://10.10.10.152/_ajax (CODE:302|SIZE:0)
++ http://10.10.10.152/_archive (CODE:302|SIZE:0)
++ http://10.10.10.152/_assets (CODE:302|SIZE:0)
++ http://10.10.10.152/_backup (CODE:302|SIZE:0)
++ http://10.10.10.152/_baks (CODE:302|SIZE:0)
++ http://10.10.10.152/_borders (CODE:302|SIZE:0)
++ http://10.10.10.152/_cache (CODE:302|SIZE:0)
++ http://10.10.10.152/_catalogs (CODE:302|SIZE:0)
++ http://10.10.10.152/_code (CODE:302|SIZE:0)
++ http://10.10.10.152/_common (CODE:302|SIZE:0)
++ http://10.10.10.152/_conf (CODE:302|SIZE:0)
++ http://10.10.10.152/_config (CODE:302|SIZE:0)
++ http://10.10.10.152/_css (CODE:302|SIZE:0)
++ http://10.10.10.152/_data (CODE:302|SIZE:0)
++ http://10.10.10.152/_database (CODE:302|SIZE:0)
++ http://10.10.10.152/_db_backups (CODE:302|SIZE:0)
++ http://10.10.10.152/_derived (CODE:302|SIZE:0)
++ http://10.10.10.152/_dev (CODE:302|SIZE:0)
++ http://10.10.10.152/_dummy (CODE:302|SIZE:0)
++ http://10.10.10.152/_files (CODE:302|SIZE:0)
++ http://10.10.10.152/_flash (CODE:302|SIZE:0)
++ http://10.10.10.152/_fpclass (CODE:302|SIZE:0)
++ http://10.10.10.152/_images (CODE:302|SIZE:0)
++ http://10.10.10.152/_img (CODE:302|SIZE:0)
++ http://10.10.10.152/_inc (CODE:302|SIZE:0)
++ http://10.10.10.152/_include (CODE:302|SIZE:0)
++ http://10.10.10.152/_includes (CODE:302|SIZE:0)
++ http://10.10.10.152/_install (CODE:302|SIZE:0)
++ http://10.10.10.152/_js (CODE:302|SIZE:0)
++ http://10.10.10.152/_layouts (CODE:302|SIZE:0)
++ http://10.10.10.152/_lib (CODE:302|SIZE:0)
++ http://10.10.10.152/_media (CODE:302|SIZE:0)
++ http://10.10.10.152/_mem_bin (CODE:302|SIZE:0)
++ http://10.10.10.152/_mm (CODE:302|SIZE:0)
++ http://10.10.10.152/_mmserverscripts (CODE:302|SIZE:0)
++ http://10.10.10.152/_mygallery (CODE:302|SIZE:0)
++ http://10.10.10.152/_net (CODE:302|SIZE:0)
++ http://10.10.10.152/_notes (CODE:302|SIZE:0)
++ http://10.10.10.152/_old (CODE:302|SIZE:0)
++ http://10.10.10.152/_overlay (CODE:302|SIZE:0)
++ http://10.10.10.152/_pages (CODE:302|SIZE:0)
++ http://10.10.10.152/_private (CODE:302|SIZE:0)
++ http://10.10.10.152/_reports (CODE:302|SIZE:0)
++ http://10.10.10.152/_res (CODE:302|SIZE:0)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.txt
+START_TIME: Mon Mar 18 23:10:31 2019
+URL_BASE: http://10.10.10.152/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+OPTION: Ignoring NOT_FOUND code -> 302
+OPTION: Not Stopping on warning messages
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://10.10.10.152/ ----
+(!) WARNING: NOT_FOUND[] not stable, unable to determine correct URLs {30X}.
+    (Try using FineTunning: '-f')
++ http://10.10.10.152/favicon.ico (CODE:200|SIZE:1150)
++ http://10.10.10.152/index.htm (CODE:200|SIZE:33680)
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: COULDNT CONNECT)
+
+-----------------
+END_TIME: Mon Mar 18 23:20:07 2019
+DOWNLOADED: 3137 - FOUND: 2

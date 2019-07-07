@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Thu Jun 13 12:27:06 2019 as: nmap -sC -sV -p- -oA swagshop_allports 10.10.10.140
+Host: 10.10.10.140 ()	Status: Up
+Host: 10.10.10.140 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Ignored State: closed (65533)
+# Nmap done at Thu Jun 13 12:38:10 2019 -- 1 IP address (1 host up) scanned in 664.81 seconds

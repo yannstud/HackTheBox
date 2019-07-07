@@ -1,0 +1,43 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb
+START_TIME: Sun Apr 14 01:46:57 2019
+URL_BASE: http://10.10.10.131/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.131/ ----
++ http://10.10.10.131/favicon.ico (CODE:200|SIZE:1406)
++ http://10.10.10.131/qrcode (CODE:500|SIZE:1039)
+
+-----------------
+END_TIME: Sun Apr 14 02:12:16 2019
+DOWNLOADED: 20458 - FOUND: 2
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb
+START_TIME: Sun Apr 14 02:13:37 2019
+URL_BASE: https://10.10.10.131/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.10.10.131/ ----
++ https://10.10.10.131/favicon.ico (CODE:200|SIZE:1406)
+
+-----------------
+END_TIME: Sun Apr 14 02:38:06 2019
+DOWNLOADED: 20458 - FOUND: 1

@@ -1,0 +1,8 @@
+10.10.10.10
+loginphpmyadmin.txt
+ls
+nmap
+simpler.py
+test
+test.txt
+writeup.txt

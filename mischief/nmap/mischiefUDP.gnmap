@@ -1,4 +1,0 @@
-# Nmap 7.70 scan initiated Fri Oct  5 11:08:35 2018 as: nmap -sU -oA mischiefUDP 10.10.10.92
-Host: 10.10.10.92 ()	Status: Up
-Host: 10.10.10.92 ()	Ports: 161/open/udp//snmp///	Ignored State: open|filtered (999)
-# Nmap done at Fri Oct  5 11:09:33 2018 -- 1 IP address (1 host up) scanned in 58.01 seconds

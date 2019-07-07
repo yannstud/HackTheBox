@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Apr 14 01:38:30 2019 as: nmap -sC -sV -p- -oA casa_all_ports 10.10.10.131
+Host: 10.10.10.131 ()	Status: Up
+Host: 10.10.10.131 ()	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 22/open/tcp//ssh//OpenSSH 7.9 (protocol 2.0)/, 80/open/tcp//http//Node.js (Express middleware)/, 443/open/tcp//ssl|http//Node.js Express framework/	Ignored State: closed (65531)
+# Nmap done at Sun Apr 14 03:05:12 2019 -- 1 IP address (1 host up) scanned in 5201.27 seconds

