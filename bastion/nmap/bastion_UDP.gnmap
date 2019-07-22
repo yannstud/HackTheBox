@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Jul  7 22:05:05 2019 as: nmap -sU -oA bastion_UDP 10.10.10.134
+Host: 10.10.10.134 ()	Status: Up
+Host: 10.10.10.134 ()	Status: Up
+# Nmap done at Sun Jul  7 22:40:27 2019 -- 1 IP address (1 host up) scanned in 2121.57 seconds

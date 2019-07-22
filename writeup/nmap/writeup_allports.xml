@@ -1,53 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Thu Jun 13 15:58:17 2019 as: nmap -sC -sV -p- -oA writeup_allports 10.10.10.138 -->
-<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA writeup_allports 10.10.10.138" start="1560434297" startstr="Thu Jun 13 15:58:17 2019" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Sun Jul  7 14:03:26 2019 as: nmap -sC -sV -p- -oA writeup_allports 10.10.10.138 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA writeup_allports 10.10.10.138" start="1562501006" startstr="Sun Jul  7 14:03:26 2019" version="7.60" xmloutputversion="1.04">
 <scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="0"/>
 <debugging level="0"/>
-<taskprogress task="Connect Scan" time="1560434421" percent="77.45" remaining="37" etc="1560434457"/>
-<taskend task="Connect Scan" time="1560434446" extrainfo="65535 total ports"/>
-<taskbegin task="Service scan" time="1560434446"/>
-<taskend task="Service scan" time="1560434447" extrainfo="2 services on 1 host"/>
-<taskbegin task="NSE" time="1560434447"/>
-<taskend task="NSE" time="1560434464"/>
-<taskbegin task="NSE" time="1560434464"/>
-<taskend task="NSE" time="1560434464"/>
-<host starttime="1560434297" endtime="1560434464"><status state="up" reason="syn-ack" reason_ttl="0"/>
-<address addr="10.10.10.138" addrtype="ipv4"/>
-<hostnames>
-</hostnames>
-<ports><extraports state="filtered" count="65533">
-<extrareasons reason="no-responses" count="65533"/>
-</extraports>
-<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4p1 Debian 10+deb9u6" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 dd:53:10:70:0b:d0:47:0a:e2:7e:4a:b6:42:98:23:c7 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKBbBK0GkiCbxmAbaYsF4DjDQ3JqErzEazl3v8OndVhynlxNA5sMnQmyH+7ZPdDx9IxvWFWkdvPDJC0rUj1CzOTOEjN61Qd7uQbo5x4rJd3PAgqU21H9NyuXt+T1S/Ud77xKei7fXt5kk1aL0/mqj8wTk6HDp0ZWrGBPCxcOxfE7NBcY3W++IIArn6irQUom0/AAtR3BseOf/VTdDWOXk/Ut3rrda4VMBpRcmTthjsTXAvKvPJcaWJATtRE2NmFjBWixzhQU+s30jPABHcVtxl/Fegr3mvS7O3MpPzoMBZP6Gw8d/bVabaCQ1JcEDwSBc9DaLm4cIhuW37dQDgqT1V&#xa;  256 37:2e:14:68:ae:b9:c2:34:2b:6e:d9:92:bc:bf:bd:28 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPzrVwOU0bohC3eXLnH0Sn4f7UAwDy7jx4pS39wtkKMF5j9yKKfjiO+5YTU//inmSjlTgXBYNvaC3xfOM/Mb9RM=&#xa;  256 93:ea:a8:40:42:c1:a8:33:85:b3:56:00:62:1c:a0:ab (EdDSA)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEuLLsM8u34m/7Hzh+yjYk4pu3WHsLOrPU2VeLn22UkO"><table>
-<elem key="fingerprint">dd5310700bd0470ae27e4ab6429823c7</elem>
-<elem key="bits">2048.0</elem>
-<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDKBbBK0GkiCbxmAbaYsF4DjDQ3JqErzEazl3v8OndVhynlxNA5sMnQmyH+7ZPdDx9IxvWFWkdvPDJC0rUj1CzOTOEjN61Qd7uQbo5x4rJd3PAgqU21H9NyuXt+T1S/Ud77xKei7fXt5kk1aL0/mqj8wTk6HDp0ZWrGBPCxcOxfE7NBcY3W++IIArn6irQUom0/AAtR3BseOf/VTdDWOXk/Ut3rrda4VMBpRcmTthjsTXAvKvPJcaWJATtRE2NmFjBWixzhQU+s30jPABHcVtxl/Fegr3mvS7O3MpPzoMBZP6Gw8d/bVabaCQ1JcEDwSBc9DaLm4cIhuW37dQDgqT1V</elem>
-<elem key="type">ssh-rsa</elem>
-</table>
-<table>
-<elem key="fingerprint">372e1468aeb9c2342b6ed992bcbfbd28</elem>
-<elem key="bits">256</elem>
-<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPzrVwOU0bohC3eXLnH0Sn4f7UAwDy7jx4pS39wtkKMF5j9yKKfjiO+5YTU//inmSjlTgXBYNvaC3xfOM/Mb9RM=</elem>
-<elem key="type">ecdsa-sha2-nistp256</elem>
-</table>
-<table>
-<elem key="fingerprint">93eaa84042c1a83385b35600621ca0ab</elem>
-<elem key="bits">256</elem>
-<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEuLLsM8u34m/7Hzh+yjYk4pu3WHsLOrPU2VeLn22UkO</elem>
-<elem key="type">ssh-ed25519</elem>
-</table>
-</script></port>
-<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
-</ports>
-<times srtt="59209" rttvar="10447" to="100997"/>
-</host>
-<taskbegin task="NSE" time="1560434464"/>
-<taskend task="NSE" time="1560434464"/>
-<taskbegin task="NSE" time="1560434464"/>
-<taskend task="NSE" time="1560434464"/>
-<runstats><finished time="1560434464" timestr="Thu Jun 13 16:01:04 2019" elapsed="167.31" summary="Nmap done at Thu Jun 13 16:01:04 2019; 1 IP address (1 host up) scanned in 167.31 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
-</runstats>
-</nmaprun>
+<taskprogress task="Connect Scan" time="1562501093" percent="33.73" remaining="169" etc="1562501262"/>
+<taskprogress task="Connect Scan" time="1562501123" percent="33.94" remaining="226" etc="1562501349"/>
+<taskprogress task="Connect Scan" time="1562501153" percent="34.13" remaining="282" etc="1562501435"/>
+<taskprogress task="Connect Scan" time="1562501154" percent="34.13" remaining="284" etc="1562501438"/>
+<taskprogress task="Connect Scan" time="1562501184" percent="34.22" remaining="341" etc="1562501524"/>
+<taskprogress task="Connect Scan" time="1562501207" percent="34.27" remaining="384" etc="1562501591"/>
+<taskprogress task="Connect Scan" time="1562501220" percent="34.29" remaining="409" etc="1562501628"/>
+<taskprogress task="Connect Scan" time="1562501221" percent="34.30" remaining="410" etc="1562501631"/>
+<taskprogress task="Connect Scan" time="1562501222" percent="34.30" remaining="412" etc="1562501634"/>
+<taskprogress task="Connect Scan" time="1562501252" percent="34.36" remaining="468" etc="1562501720"/>
+<taskprogress task="Connect Scan" time="1562501282" percent="34.43" remaining="524" etc="1562501806"/>
+<taskprogress task="Connect Scan" time="1562501312" percent="34.49" remaining="580" etc="1562501891"/>
+<taskprogress task="Connect Scan" time="1562501342" percent="34.55" remaining="635" etc="1562501977"/>
+<taskprogress task="Connect Scan" time="1562501372" percent="34.58" remaining="691" etc="1562502063"/>
+<taskprogress task="Connect Scan" time="1562501402" percent="34.61" remaining="747" etc="1562502148"/>
+<taskprogress task="Connect Scan" time="1562501426" percent="34.63" remaining="791" etc="1562502217"/>
+<taskprogress task="Connect Scan" time="1562501429" percent="34.63" remaining="797" etc="1562502225"/>
+<taskprogress task="Connect Scan" time="1562501462" percent="34.66" remaining="858" etc="1562502320"/>
+<taskprogress task="Connect Scan" time="1562501498" percent="34.68" remaining="925" etc="1562502423"/>
+<taskprogress task="Connect Scan" time="1562501537" percent="34.71" remaining="997" etc="1562502534"/>
+<taskprogress task="Connect Scan" time="1562501579" percent="34.74" remaining="1075" etc="1562502654"/>
+<taskprogress task="Connect Scan" time="1562501624" percent="34.77" remaining="1158" etc="1562502781"/>

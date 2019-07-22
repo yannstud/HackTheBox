@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun Jul  7 15:30:33 2019 as: nmap -sC -sV -p- -oA seb_allports 62.210.206.53 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA seb_allports 62.210.206.53" start="1562506233" startstr="Sun Jul  7 15:30:33 2019" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1562506233" endtime="1562506589"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="62.210.206.53" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pssbackup.pss-network.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65522">
+<extrareasons reason="no-responses" count="65522"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" tunnel="ssl" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=www.qxone4yznpaeeslp.net&#xa;Not valid before: 2019-02-13T00:00:00&#xa;Not valid after:  2020-01-03T00:00:00"><table key="subject">
+<elem key="commonName">www.qxone4yznpaeeslp.net</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">www.ueysiobgqlvkauidlw.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="exponent">userdata: 0x562423308528</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-02-13T00:00:00</elem>
+<elem key="notAfter">2020-01-03T00:00:00</elem>
+</table>
+<elem key="md5">31664d40aecc755755793089a2a64712</elem>
+<elem key="sha1">ce0e7fbd88b8f2523163d797ef0ad1fb5f939a4e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIBwzCCASygAwIBAgIIIbBx+UOi5rEwDQYJKoZIhvcNAQEFBQAwJTEjMCEGA1UE&#xa;Awwad3d3LnVleXNpb2JncWx2a2F1aWRsdy5jb20wHhcNMTkwMjEzMDAwMDAwWhcN&#xa;MjAwMTAzMDAwMDAwWjAjMSEwHwYDVQQDDBh3d3cucXhvbmU0eXpucGFlZXNscC5u&#xa;ZXQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMof/c3gunJPloyo8PQLWBf3&#xa;GRluyEbZecTGY2dGWSfTzklIeY6i9nxB48A9/AJtsb54wtDSxt+MjewxQSw8bWQl&#xa;DPCVH0Art+HpAfIaLld/ne2T/eL9gS8U1ZqrB6ZGlMaiJCq41v7P9MFmzAfKseiC&#xa;+vX6vaGHrh94zxNkj+YtAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAN5iIitLJiIzx&#xa;lmAXpHyxI2UIQkHkbgRWoxDMBPqWpY+ym/fuLb+psFbEw7m14BGGUmwO3+rHHbLa&#xa;E4BVUBeDroYwQeSsVTfBblinRz7GGB++KxGTwyntbccnhQsemqkq+XVJAUjESkO2&#xa;DR436SSEpFlYlQ4DZyFxk5SJTH5kg2s=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.0p1 Debian 4+deb7u7" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.0p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 22:f5:bf:34:fe:87:46:4e:c3:e9:ef:c7:40:c9:7f:7a (DSA)&#xa;  2048 1b:c3:ef:66:ab:0f:1d:34:f3:f1:6b:9f:a4:ee:62:2f (RSA)&#xa;  256 36:09:f1:bc:51:95:2d:31:fa:d3:0d:91:7c:71:a6:da (ECDSA)"><table>
+<elem key="fingerprint">22f5bf34fe87464ec3e9efc740c97f7a</elem>
+<elem key="bits">1024.0</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAIjXjB05tc+RzXkFrCYhZkcTn5HNW2B3VSLgZJknhHAJ/pyDtoxyGST4SRU1CSbSv3JKZFbgjT8hFLHFguv84UA1xcNDoUjVVbg/vZoUwHFl3ZCzR/EcEufLNgZUpOop4rasB84ILE5YOxNLm8brXoJue+r8QCpl3ch46WjMN9n/AAAAFQChEiZoV+TcJhwz5LCkk0GJDWuc3wAAAIA87G3/LjtOcnqgWZ/HKX2nSwG/KOi+nYTmH6yI33jYtoRxtDEeIcckk6NCoUHcLqtoxkuRYjvuOJd2QonFI99u6CIi6BDxk9jPEhXwK4Z/V7mzRdOgnWxKSq3DuV2vnGS8oWo8nF3MCQ77SxcBklr2ddYazNKYEjZdYaJYPP543QAAAIBgoa8JpEzgZ/p1pHilsu0YLwvZZuy45yI99dPQghu14/DHBOXaoOmIU0D4r83+0YROgFC2My/Eq4O6zc96GVX8HqtZ0idk2xlKSTDlz9m9256+8VBdj8avD/YsBU6zn8Di9KJTDldxs3tfBzu6G+bnfOTlBLMLgneu9nxNloa0bg==</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="fingerprint">1bc3ef66ab0f1d34f3f16b9fa4ee622f</elem>
+<elem key="bits">2048.0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC62SIykfJl9LLdB8aovOOEmE8vWKTQNNnloLkcljXZEZkkGTi4r174Bap6U/y9ihmynesSBrAdWTCre7D/SFkJmpFg8vk78XLqgrFQ6nTfiYVKk+ijafg3aBdM1NmqA6Vb2yYKZ5LTvX2wnyrsAURmzre1NYKOVrku3cWi/Oatg6Wy97fVLFVcaZmqfxzaNmepnXSBHvkcj3PfBCg9Dc7HEYhOWyLj8Pk6JIt4ieRWVVmrJN2SpV4R64Oaqe9Be2LHOL2VQbhLHD7oERHme5GWAjoyoHtPNgAi2X8iHHmHzOYM+h/vckNx/vL9JGArBrufJkzRvgHthGLqMXXb6aD7</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">3609f1bc51952d31fad30d917c71a6da</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEoI1V6XhqHT/guoB0+krjBUW5WNyO3mTWK8Tvjtf4/u65WJUkoK5DK0ZjroiccczVsT7qVMoQl0dVCTnCqFfWo=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.22" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.22</cpe></service><script id="http-server-header" output="Apache/2.2.22 (Debian)"><elem>Apache/2.2.22 (Debian)</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="6.0p1 Debian 4+deb7u7" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:6.0p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 22:f5:bf:34:fe:87:46:4e:c3:e9:ef:c7:40:c9:7f:7a (DSA)&#xa;  2048 1b:c3:ef:66:ab:0f:1d:34:f3:f1:6b:9f:a4:ee:62:2f (RSA)&#xa;  256 36:09:f1:bc:51:95:2d:31:fa:d3:0d:91:7c:71:a6:da (ECDSA)"><table>
+<elem key="fingerprint">22f5bf34fe87464ec3e9efc740c97f7a</elem>
+<elem key="bits">1024.0</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAIjXjB05tc+RzXkFrCYhZkcTn5HNW2B3VSLgZJknhHAJ/pyDtoxyGST4SRU1CSbSv3JKZFbgjT8hFLHFguv84UA1xcNDoUjVVbg/vZoUwHFl3ZCzR/EcEufLNgZUpOop4rasB84ILE5YOxNLm8brXoJue+r8QCpl3ch46WjMN9n/AAAAFQChEiZoV+TcJhwz5LCkk0GJDWuc3wAAAIA87G3/LjtOcnqgWZ/HKX2nSwG/KOi+nYTmH6yI33jYtoRxtDEeIcckk6NCoUHcLqtoxkuRYjvuOJd2QonFI99u6CIi6BDxk9jPEhXwK4Z/V7mzRdOgnWxKSq3DuV2vnGS8oWo8nF3MCQ77SxcBklr2ddYazNKYEjZdYaJYPP543QAAAIBgoa8JpEzgZ/p1pHilsu0YLwvZZuy45yI99dPQghu14/DHBOXaoOmIU0D4r83+0YROgFC2My/Eq4O6zc96GVX8HqtZ0idk2xlKSTDlz9m9256+8VBdj8avD/YsBU6zn8Di9KJTDldxs3tfBzu6G+bnfOTlBLMLgneu9nxNloa0bg==</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="fingerprint">1bc3ef66ab0f1d34f3f16b9fa4ee622f</elem>
+<elem key="bits">2048.0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC62SIykfJl9LLdB8aovOOEmE8vWKTQNNnloLkcljXZEZkkGTi4r174Bap6U/y9ihmynesSBrAdWTCre7D/SFkJmpFg8vk78XLqgrFQ6nTfiYVKk+ijafg3aBdM1NmqA6Vb2yYKZ5LTvX2wnyrsAURmzre1NYKOVrku3cWi/Oatg6Wy97fVLFVcaZmqfxzaNmepnXSBHvkcj3PfBCg9Dc7HEYhOWyLj8Pk6JIt4ieRWVVmrJN2SpV4R64Oaqe9Be2LHOL2VQbhLHD7oERHme5GWAjoyoHtPNgAi2X8iHHmHzOYM+h/vckNx/vL9JGArBrufJkzRvgHthGLqMXXb6aD7</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">3609f1bc51952d31fad30d917c71a6da</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEoI1V6XhqHT/guoB0+krjBUW5WNyO3mTWK8Tvjtf4/u65WJUkoK5DK0ZjroiccczVsT7qVMoQl0dVCTnCqFfWo=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=ISISIS/organizationName=SISISI/stateOrProvinceName=Panam/countryName=FR&#xa;Not valid before: 2014-02-27T09:08:32&#xa;Not valid after:  2034-02-22T09:08:32"><table key="subject">
+<elem key="stateOrProvinceName">Panam</elem>
+<elem key="localityName">panam</elem>
+<elem key="organizationName">SISISI</elem>
+<elem key="commonName">ISISIS</elem>
+<elem key="organizationalUnitName">ISIS</elem>
+<elem key="countryName">FR</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">Panam</elem>
+<elem key="localityName">panam</elem>
+<elem key="organizationName">SISISI</elem>
+<elem key="commonName">ISISIS</elem>
+<elem key="organizationalUnitName">ISIS</elem>
+<elem key="countryName">FR</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">userdata: 0x5624245b0ab8</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2014-02-27T09:08:32</elem>
+<elem key="notAfter">2034-02-22T09:08:32</elem>
+</table>
+<elem key="md5">87eaf01bda4ef6767be6b4df4ba27d7b</elem>
+<elem key="sha1">519b0ca67360ce73e4ce58f372596c36475b5b9f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDODCCAiACCQCoe7EnMfPWzjANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJG&#xa;UjEOMAwGA1UECAwFUGFuYW0xDjAMBgNVBAcMBXBhbmFtMQ8wDQYDVQQKDAZTSVNJ&#xa;U0kxDTALBgNVBAsMBElTSVMxDzANBgNVBAMMBklTSVNJUzAeFw0xNDAyMjcwOTA4&#xa;MzJaFw0zNDAyMjIwOTA4MzJaMF4xCzAJBgNVBAYTAkZSMQ4wDAYDVQQIDAVQYW5h&#xa;bTEOMAwGA1UEBwwFcGFuYW0xDzANBgNVBAoMBlNJU0lTSTENMAsGA1UECwwESVNJ&#xa;UzEPMA0GA1UEAwwGSVNJU0lTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC&#xa;AQEAx7DWOeRzDcHYGiqG4Z1fJjuQYBX6uVbLj+5FAq9j2JUcPzsQMPYheHpvKIAE&#xa;idbn/5i6xKRADd0REGv14xymxndZvkxhoMv8IkeECc1/uMy7CXVVLxQ0LoX0jYTz&#xa;hauT+qFsYfXwCjRMm3srxS0vVJY09GP0x3Qq0P5cXysqbfjWf2JnrJ4nZCiigtIp&#xa;g0WgMfn4ETyJQvOYNGoVxX+taXuuNCGfihn5ZhWTHHRb+OPE7oCpWT03ODdxqGGr&#xa;1g0lHBT5i6w1T+d9KffTptMoz/Cc3ecdp7AkdvbjCnr0cltD3fbocnqQ8tkBSmsd&#xa;osgIMaZ6sI1X4Q0MlQ+2X8JYbQIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQCdpjxD&#xa;Uzvkn65g2yuJ01V5X4pYsgqOvdT7CKvNozKExfMGXVjYwVecpiV/lvdaVTw57DPS&#xa;RTBJzMqMnWVST9lA6NIROIANUQJTu93NKcDkjHFDxbFA9knSU/k9IzHoi+CkM3q8&#xa;gw2gtsV+JN3NUNHcKiNBfWQz8r/JEzq/HtPJ6rJL6Oh9+kEKJPG6WmY8cKXl0nwQ&#xa;ATTTeL7aBbbY29Z4Iy9pPlnWei32Dk38PjtVB6LWf0jwsjlhnyOChhbBp1Uco15v&#xa;bWjfSbJM3n7D4poKCfrpWmRNRwPtGIGUYE+V7i0pD0dO00kM0hunjKzfkU52Va0q&#xa;XMlSQ4/ZDbm64wGD&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="1723"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pptp" product="linux" version="(Firmware: 1)" hostname="local" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2424"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kofax-svr" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=dediboite-PC&#xa;Not valid before: 2019-07-01T23:00:33&#xa;Not valid after:  2019-12-31T23:00:33"><table key="subject">
+<elem key="commonName">dediboite-PC</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">dediboite-PC</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">userdata: 0x5624242d3238</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-07-01T23:00:33</elem>
+<elem key="notAfter">2019-12-31T23:00:33</elem>
+</table>
+<elem key="md5">2b15d1356f9adfca000c0fae1511561f</elem>
+<elem key="sha1">df5bb51b62361e19d47c85d67c590eaf084cb8c0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC3DCCAcSgAwIBAgIQYd/gqPxcUZtOuvxBw/5N/TANBgkqhkiG9w0BAQUFADAX&#xa;MRUwEwYDVQQDEwxkZWRpYm9pdGUtUEMwHhcNMTkwNzAxMjMwMDMzWhcNMTkxMjMx&#xa;MjMwMDMzWjAXMRUwEwYDVQQDEwxkZWRpYm9pdGUtUEMwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQDn9s1TXFsVF6xWZ835M3B19dqdhT0/huGXa/X+X0ZI&#xa;1NR7jbLGVqaUhpPVy4xAoZXroiuh7qMi9RAADm5H2E9AWfMD1gWTRVHmI9dvQdvW&#xa;79nKlYrpn3OtxBOKBEF2ajlwWq4pzX1MVG2WPixOM4f6iK/JEjjf8LHfUdr6KYXh&#xa;nN/+DxzFAMGRjImE4WV4btlPOOVPacuz132a/BTPGxewoRK+Ti7j1B0bmDM2CNdZ&#xa;qC/C+FGgUVQ2Gk6MGGxYLBsICvLuBjrUBo6g+pQr7fc9KZUgXd8YhLzX+PunoNAY&#xa;sVkw6+ftkKMytnZBh4oBES0D3w1O1EgNdRv+Jl9fOYmRAgMBAAGjJDAiMBMGA1Ud&#xa;JQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUFAAOCAQEA&#xa;DVQm9v625XAnzbVljwJKKMnBwRTUwyojQqEZ0Ta1ikKbJ/IkgGGMclZcWoG6w+gC&#xa;XZjZt0+LdxYj88J+Ag8ukTHLex16OIIu1J0n0VBB3sPzEHs19LkeqzAnw+LqmSOO&#xa;X6TWm/WB4hoE13BX3V3keH+lAj5Tb9o7+IbUdv5CgugaJumn75zebkbX06o68SWU&#xa;MjgcgTGY63/Rl0yL+FP8u7VFYr9FgbJB7HKAWdfIIC9cpKh3uL8jRL2hCK1zotat&#xa;ZEma5AXTNxg6OJQl5SACCjDKQILTtDOeC4AE9FeByYud3M0GrovfyBIu+HVjbEmy&#xa;9V7xiLzaMZmexePN0hqm0w==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2019-07-07T13:34:47+00:00; -24s from scanner time."><elem key="delta">-24.0</elem>
+<elem key="date">2019-07-07T13:34:47+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="8888"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="Nextcloud"><elem key="title">&#xa;&#x9;&#x9;Nextcloud&#x9;&#x9;</elem>
+</script><script id="ssl-cert" output="Subject: commonName=nextcloud&#xa;Subject Alternative Name: DNS:nextcloud&#xa;Not valid before: 2018-12-11T17:23:50&#xa;Not valid after:  2028-12-08T17:23:50"><table key="subject">
+<elem key="commonName">nextcloud</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">nextcloud</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="exponent">userdata: 0x562424868828</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:nextcloud</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-12-11T17:23:50</elem>
+<elem key="notAfter">2028-12-08T17:23:50</elem>
+</table>
+<elem key="md5">937688b6f491578ae2f83f8182213a6f</elem>
+<elem key="sha1">dda590bd08210aeedc34d2d94356a4ba2999f1c4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzjCCAbagAwIBAgIJAMG8TpLNoaj1MA0GCSqGSIb3DQEBCwUAMBQxEjAQBgNV&#xa;BAMMCW5leHRjbG91ZDAeFw0xODEyMTExNzIzNTBaFw0yODEyMDgxNzIzNTBaMBQx&#xa;EjAQBgNVBAMMCW5leHRjbG91ZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC&#xa;ggEBAMeDOZzT4TZ8FzUFhla1c6kpbahBVHxAJi05s7K3YVVsNspkboDnFeE69tvM&#xa;HBLMTbmcCde8B4ct3xbjUSbXBUXy6a9XX/51XJekeVNhHWnJHGo53V9rvyHRJxPO&#xa;EwAm2ZneVtfp7ZGgQFvS5sWMRSMqZ0+6lzQ741/xI8Rj5X+ljIGhYQdN8U23Kkw6&#xa;BwHVXGMFdDvifDwL5yuZ/IAzzUqUBmQB0gpCFOeU6CBNMYcznLLAOm4tb5lbbN8N&#xa;5jCqLicStQo9K/tCWK/eUbBMGs5obXoykXGYxm7h1wd4iUKsVWkKmdIvYoEmQObq&#xa;Zaamg4ZefnvuXPvdWi0X9D18NtECAwEAAaMjMCEwCQYDVR0TBAIwADAUBgNVHREE&#xa;DTALggluZXh0Y2xvdWQwDQYJKoZIhvcNAQELBQADggEBACeu5myA0ac8cc0r65Pj&#xa;SrqZ7bzuPranKaYuIrwrBY097EEnOgAjadRVVG+2urcm3E4egzgZq0yCmc6a5LUI&#xa;XLWZI2AaEkxMHYXvt8FLB+wW1KDb2nI7bM07IPu7er/DESG8tcHitLAymUSDYZls&#xa;Ne/QwE/fEYWBfgmU+u6/XQjGIUv4frZYJiGngS+C1hwGRKpB0AAbcD1L9ZvEWbtS&#xa;3xxNjiYfz87zKXlOGoCHI8zEHEsL2aB+9wH6f2MOjT3yRvosOYw5dAivZgL+SMI6&#xa;lJ7rplYQMAmUvQh4r1TtfRy+1t3xekgfwxgDxCO3pBLQloHNwY3TvaD/XjM1HRmg&#xa;HAo=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="9030"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Tor directory" method="probed" conf="10"><cpe>cpe:/a:torproject:tor</cpe></service><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Site doesn&apos;t have a title."></script></port>
+<port protocol="tcp" portid="12345"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="ZNC IRC bouncer http config" version="0.097 or later" method="probed" conf="10"><cpe>cpe:/a:znc:znc</cpe></service><script id="http-cookie-flags" output="&#xa;  /: &#xa;    12345-SessionId: &#xa;      httponly flag not set"><table key="/">
+<table key="12345-SessionId">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-server-header" output="ZNC - http://znc.in"><elem>ZNC - http://znc.in</elem>
+</script><script id="http-title" output="ZNC - Web Frontend"><elem key="title">ZNC - Web Frontend</elem>
+</script></port>
+<port protocol="tcp" portid="17459"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="uTorrent utserver web interface" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:utorrent:utorrent</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized\x0D&#xa;  Basic realm=uTorrent&#xa;"><table>
+<table key="params">
+<elem key="realm">uTorrent</elem>
+</table>
+<elem key="scheme">Basic</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="ssl-cert" output="Subject: countryName=US,ST=CA,L=San Francisco,O=BitTorrent,OU=uTorrent,CN=uTorrent&#xa;Not valid before: 2014-07-03T12:56:46&#xa;Not valid after:  2015-07-03T18:56:46"><table key="subject">
+<elem key="countryName">US,ST=CA,L=San Francisco,O=BitTorrent,OU=uTorrent,CN=uTorrent</elem>
+</table>
+<table key="issuer">
+<elem key="countryName">US,ST=CA,L=San Francisco,O=BitTorrent,OU=uTorrent,CN=uTorrent</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="exponent">userdata: 0x562422ba80c8</elem>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2014-07-03T12:56:46</elem>
+<elem key="notAfter">2015-07-03T18:56:46</elem>
+</table>
+<elem key="md5">e097807b60ab4a6c648cb49783af8902</elem>
+<elem key="sha1">60ce7b1688d4c8be2d3dcb6aca21661fe876c89e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICEzCCAXygAwIBAgIQSFkTBk3In6lL8TOdUEucEjANBgkqhkiG9w0BAQUFADBI&#xa;MUYwRAYDVQQGEz1VUyxTVD1DQSxMPVNhbiBGcmFuY2lzY28sTz1CaXRUb3JyZW50&#xa;LE9VPXVUb3JyZW50LENOPXVUb3JyZW50MB4XDTE0MDcwMzEyNTY0NloXDTE1MDcw&#xa;MzE4NTY0NlowSDFGMEQGA1UEBhM9VVMsU1Q9Q0EsTD1TYW4gRnJhbmNpc2NvLE89&#xa;Qml0VG9ycmVudCxPVT11VG9ycmVudCxDTj11VG9ycmVudDCBnzANBgkqhkiG9w0B&#xa;AQEFAAOBjQAwgYkCgYEAo9+pploKlGlSlp3zzh1LF4HDRXM2LAyp2MHchO63W2Bj&#xa;LM6YXzd9zT1dnOFE4qoupuJT4MTjLAaS10JfddeFAVZ8W+SNOimKCxFzaM1mypba&#xa;4kxV6KTivZH/WkJG7hC9FhJGk9HmUxLAjdK7f9RSy6Q6iB3SAlhen2ZLv/Ge1u0C&#xa;AwEAATANBgkqhkiG9w0BAQUFAAOBgQBpJUauB3nJnr7ISnP0T6zlbstS3N1DEHns&#xa;sl/MRRwSAraBKCnb89IWCbst3bAUtc6aQpM3mYegOJUjgGYlbH7aq1TOLcnkdQDo&#xa;G5BB10b+BPGjEpehz+DCaFXtqy1szK3Bnx/+Y8P3oQFS52zicfJpxmKL30pHL/E5&#xa;VCLbMpEYTw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2019-07-07T13:34:47+00:00; -25s from scanner time."><elem key="delta">-25.0</elem>
+<elem key="date">2019-07-07T13:34:47+00:00</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="51413"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -24s, deviation: 0s, median: -25s"><elem key="mean">-24</elem>
+<elem key="median">-25</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="16730" rttvar="1935" to="100000"/>
+</host>
+<runstats><finished time="1562506589" timestr="Sun Jul  7 15:36:29 2019" elapsed="356.27" summary="Nmap done at Sun Jul  7 15:36:29 2019; 1 IP address (1 host up) scanned in 356.27 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

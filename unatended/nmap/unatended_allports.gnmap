@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Mon Jul  8 15:26:45 2019 as: nmap -sC -sV -p- -oA unatended_allports 10.10.10.126
+Host: 10.10.10.126 ()	Status: Up
+Host: 10.10.10.126 ()	Ports: 80/open/tcp//http//nginx 1.10.3/, 443/open/tcp//ssl|http//nginx 1.10.3/	Ignored State: filtered (65533)
+# Nmap done at Mon Jul  8 15:29:56 2019 -- 1 IP address (1 host up) scanned in 190.55 seconds

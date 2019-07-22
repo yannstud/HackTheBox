@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Jul  7 21:56:49 2019 as: nmap -sC -sV -oA bastion 10.10.10.134
+Host: 10.10.10.134 ()	Status: Up
+Host: 10.10.10.134 ()	Ports: 22/open/tcp//ssh//OpenSSH for_Windows_7.9 (protocol 2.0)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows Server 2016 Standard 14393 microsoft-ds/	Ignored State: closed (996)
+# Nmap done at Sun Jul  7 21:57:13 2019 -- 1 IP address (1 host up) scanned in 24.03 seconds

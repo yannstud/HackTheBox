@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Mon Jul  8 15:26:45 2019 as: nmap -sC -sV -p- -oA unatended_allports 10.10.10.126 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA unatended_allports 10.10.10.126" start="1562592405" startstr="Mon Jul  8 15:26:45 2019" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="Connect Scan" time="1562592574" percent="95.98" remaining="8" etc="1562592581"/>
+<taskprogress task="Connect Scan" time="1562592577" percent="97.82" remaining="4" etc="1562592581"/>
+<taskend task="Connect Scan" time="1562592580" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1562592581"/>
+<taskend task="Service scan" time="1562592593" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1562592593"/>
+<taskend task="NSE" time="1562592596"/>
+<taskbegin task="NSE" time="1562592596"/>
+<taskend task="NSE" time="1562592596"/>
+<host starttime="1562592405" endtime="1562592596"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.126" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe></service><script id="http-server-header" output="nginx/1.10.3"><elem>nginx/1.10.3</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.10.3" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.10.3</cpe></service><script id="http-server-header" output="nginx/1.10.3"><elem>nginx/1.10.3</elem>
+</script><script id="http-title" output="503 Service Temporarily Unavailable"><elem key="title">503 Service Temporarily Unavailable</elem>
+</script><script id="ssl-cert" output="Subject: commonName=www.nestedflanders.htb/organizationName=Unattended ltd/stateOrProvinceName=IT/countryName=IT/localityName=Unattended&#xa;Issuer: commonName=www.nestedflanders.htb/organizationName=Unattended ltd/stateOrProvinceName=IT/countryName=IT/localityName=Unattended&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2018-12-19T09:43:58&#xa;Not valid after:  2021-09-13T09:43:58&#xa;MD5:   78b4 b5be 7cb9 dde0 fc4b 5b5b dae7 5690&#xa;SHA-1: 403d 52b6 239a e372 f804 018d 30ca b4da 16ac 4c07&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDqDCCApCgAwIBAgIJAJVovQaeLoZNMA0GCSqGSIb3DQEBCwUAMGkxCzAJBgNV&#xa;BAYTAklUMQswCQYDVQQIDAJJVDETMBEGA1UEBwwKVW5hdHRlbmRlZDEXMBUGA1UE&#xa;CgwOVW5hdHRlbmRlZCBsdGQxHzAdBgNVBAMMFnd3dy5uZXN0ZWRmbGFuZGVycy5o&#xa;dGIwHhcNMTgxMjE5MDk0MzU4WhcNMjEwOTEzMDk0MzU4WjBpMQswCQYDVQQGEwJJ&#xa;VDELMAkGA1UECAwCSVQxEzARBgNVBAcMClVuYXR0ZW5kZWQxFzAVBgNVBAoMDlVu&#xa;YXR0ZW5kZWQgbHRkMR8wHQYDVQQDDBZ3d3cubmVzdGVkZmxhbmRlcnMuaHRiMIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0TnWpfhd8mvIJpHsIJbEe5jF&#xa;Dh189POmS3ar0Tkw9XtmS8N1We2+Efv1J0PAtiAThPRy43QLRWcoFHxnF33uF471&#xa;87CIyW/s2TutX0AEA1O5PIAJQGpQGtt5vqGGn5biZRDHsmh3LjhavDqaYjtAm+Nc&#xa;FtACmnvQ08ZkSdJtlGPOukZR2KnQd+5BqWPWVe1Cbd6iqBy7eIca33hhBRRIWWLR&#xa;wjZZiL+3TkwKzDOgiPmf9RXp4ptiovc8JjCq6+GKEUUB//66YapOf12qak5QlRAV&#xa;FKbJQjDzTtgmr7N5fZAOstrsd60WDm2LKWl4mEhcSgKzBLiOLUVtXj/fx9WUuwID&#xa;AQABo1MwUTAdBgNVHQ4EFgQUKN3n8oVGmZ064rJdmdsHG0graZgwHwYDVR0jBBgw&#xa;FoAUKN3n8oVGmZ064rJdmdsHG0graZgwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG&#xa;9w0BAQsFAAOCAQEAyA0KqFCAnBSp7JCGIVKuEeLwzi84+iCYRDryG5S0oTHLhnNY&#xa;ctIIwstx4qYOdqqAJ0HPUwRaXs+3349fR5dNcKxIQOtdrc7vwVk36eO7c4+c48td&#xa;smirv8kS8vuXr8zzTrtkSBA9+d00L9MS38PjBhLYbRx8R04B2Fv2/ffiRieScs5n&#xa;uLy08cJJjKiYB3bZXmn2FpHcntDSeE90X7VSexdgjKIVjls/uKuqLNfymeoDnCmg&#xa;MVvo5QZqDKMlJMGxNzC/JjXVqJ/OOkxrhcwbsU6IsZSHM/UvVqiHZq4WHaHjgf1O&#xa;/PVaF+F95sVBlz36HVIDeDkq3zAgdXzUbc4jvg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="stateOrProvinceName">IT</elem>
+<elem key="countryName">IT</elem>
+<elem key="commonName">www.nestedflanders.htb</elem>
+<elem key="localityName">Unattended</elem>
+<elem key="organizationName">Unattended ltd</elem>
+</table>
+<table key="issuer">
+<elem key="stateOrProvinceName">IT</elem>
+<elem key="countryName">IT</elem>
+<elem key="commonName">www.nestedflanders.htb</elem>
+<elem key="localityName">Unattended</elem>
+<elem key="organizationName">Unattended ltd</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="exponent">userdata: 0x55a12e3fe2e8</elem>
+<elem key="bits">2048</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">28:DD:E7:F2:85:46:99:9D:3A:E2:B2:5D:99:DB:07:1B:48:2B:69:98</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:28:DD:E7:F2:85:46:99:9D:3A:E2:B2:5D:99:DB:07:1B:48:2B:69:98&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+<elem key="critical">true</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2018-12-19T09:43:58</elem>
+<elem key="notAfter">2021-09-13T09:43:58</elem>
+</table>
+<elem key="md5">78b4b5be7cb9dde0fc4b5b5bdae75690</elem>
+<elem key="sha1">403d52b6239ae372f804018d30cab4da16ac4c07</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDqDCCApCgAwIBAgIJAJVovQaeLoZNMA0GCSqGSIb3DQEBCwUAMGkxCzAJBgNV&#xa;BAYTAklUMQswCQYDVQQIDAJJVDETMBEGA1UEBwwKVW5hdHRlbmRlZDEXMBUGA1UE&#xa;CgwOVW5hdHRlbmRlZCBsdGQxHzAdBgNVBAMMFnd3dy5uZXN0ZWRmbGFuZGVycy5o&#xa;dGIwHhcNMTgxMjE5MDk0MzU4WhcNMjEwOTEzMDk0MzU4WjBpMQswCQYDVQQGEwJJ&#xa;VDELMAkGA1UECAwCSVQxEzARBgNVBAcMClVuYXR0ZW5kZWQxFzAVBgNVBAoMDlVu&#xa;YXR0ZW5kZWQgbHRkMR8wHQYDVQQDDBZ3d3cubmVzdGVkZmxhbmRlcnMuaHRiMIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0TnWpfhd8mvIJpHsIJbEe5jF&#xa;Dh189POmS3ar0Tkw9XtmS8N1We2+Efv1J0PAtiAThPRy43QLRWcoFHxnF33uF471&#xa;87CIyW/s2TutX0AEA1O5PIAJQGpQGtt5vqGGn5biZRDHsmh3LjhavDqaYjtAm+Nc&#xa;FtACmnvQ08ZkSdJtlGPOukZR2KnQd+5BqWPWVe1Cbd6iqBy7eIca33hhBRRIWWLR&#xa;wjZZiL+3TkwKzDOgiPmf9RXp4ptiovc8JjCq6+GKEUUB//66YapOf12qak5QlRAV&#xa;FKbJQjDzTtgmr7N5fZAOstrsd60WDm2LKWl4mEhcSgKzBLiOLUVtXj/fx9WUuwID&#xa;AQABo1MwUTAdBgNVHQ4EFgQUKN3n8oVGmZ064rJdmdsHG0graZgwHwYDVR0jBBgw&#xa;FoAUKN3n8oVGmZ064rJdmdsHG0graZgwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG&#xa;9w0BAQsFAAOCAQEAyA0KqFCAnBSp7JCGIVKuEeLwzi84+iCYRDryG5S0oTHLhnNY&#xa;ctIIwstx4qYOdqqAJ0HPUwRaXs+3349fR5dNcKxIQOtdrc7vwVk36eO7c4+c48td&#xa;smirv8kS8vuXr8zzTrtkSBA9+d00L9MS38PjBhLYbRx8R04B2Fv2/ffiRieScs5n&#xa;uLy08cJJjKiYB3bZXmn2FpHcntDSeE90X7VSexdgjKIVjls/uKuqLNfymeoDnCmg&#xa;MVvo5QZqDKMlJMGxNzC/JjXVqJ/OOkxrhcwbsU6IsZSHM/UvVqiHZq4WHaHjgf1O&#xa;/PVaF+F95sVBlz36HVIDeDkq3zAgdXzUbc4jvg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+</ports>
+<times srtt="25645" rttvar="1211" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1562592596"/>
+<taskend task="NSE" time="1562592596"/>
+<taskbegin task="NSE" time="1562592596"/>
+<taskend task="NSE" time="1562592596"/>
+<runstats><finished time="1562592596" timestr="Mon Jul  8 15:29:56 2019" elapsed="190.55" summary="Nmap done at Mon Jul  8 15:29:56 2019; 1 IP address (1 host up) scanned in 190.55 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

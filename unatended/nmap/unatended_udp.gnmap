@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Mon Jul  8 15:45:46 2019 as: nmap -sU -oA unatended_udp 10.10.10.126
+Host: 10.10.10.126 ()	Status: Up
+Host: 10.10.10.126 ()	Status: Up
+# Nmap done at Mon Jul  8 15:46:17 2019 -- 1 IP address (1 host up) scanned in 30.82 seconds

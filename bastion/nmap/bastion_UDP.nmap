@@ -1,0 +1,6 @@
+# Nmap 7.60 scan initiated Sun Jul  7 22:05:05 2019 as: nmap -sU -oA bastion_UDP 10.10.10.134
+Nmap scan report for 10.10.10.134
+Host is up (0.028s latency).
+All 1000 scanned ports on 10.10.10.134 are closed (883) or open|filtered (117)
+
+# Nmap done at Sun Jul  7 22:40:27 2019 -- 1 IP address (1 host up) scanned in 2121.57 seconds

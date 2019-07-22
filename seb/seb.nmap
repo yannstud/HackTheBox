@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Jul  7 15:20:45 2019 as: nmap -sC -sV -oA seb http://62.210.206.53
+Unable to split netmask from target expression: "http://62.210.206.53"
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sun Jul  7 15:20:45 2019 -- 0 IP addresses (0 hosts up) scanned in 0.29 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Jul  7 14:08:55 2019 as: nmap -sC -sV -Pn -oA writeup 10.10.10.138
+Host: 10.10.10.138 (writeup.htb)	Status: Up
+Host: 10.10.10.138 (writeup.htb)	Status: Up
+# Nmap done at Sun Jul  7 14:12:17 2019 -- 1 IP address (1 host up) scanned in 201.80 seconds

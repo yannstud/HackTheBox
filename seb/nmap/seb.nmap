@@ -1,0 +1,168 @@
+# Nmap 7.60 scan initiated Sun Jul  7 15:20:57 2019 as: nmap -sC -sV -oA seb 62.210.206.53
+Nmap scan report for pssbackup.pss-network.com (62.210.206.53)
+Host is up (0.021s latency).
+Scanned at 2019-07-07 15:20:57 CEST for 249s
+Not shown: 991 filtered ports
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ssl/ftp?
+| ssl-cert: Subject: commonName=www.uf4yftaospsxzd2is4l.net
+| Issuer: commonName=www.3fjcpcmhp7xdcaqrx.com
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2019-06-25T00:00:00
+| Not valid after:  2019-08-08T00:00:00
+| MD5:   bade 35b9 1f84 2bda 6ef3 cbcf 8651 05d7
+| SHA-1: a1bb eb97 1983 2e0e 4abf cc7d b794 ad88 424d 00d6
+| -----BEGIN CERTIFICATE-----
+| MIIBxTCCAS6gAwIBAgIIHiBdaIWwG3kwDQYJKoZIhvcNAQEFBQAwJDEiMCAGA1UE
+| AwwZd3d3LjNmamNwY21ocDd4ZGNhcXJ4LmNvbTAeFw0xOTA2MjUwMDAwMDBaFw0x
+| OTA4MDgwMDAwMDBaMCYxJDAiBgNVBAMMG3d3dy51ZjR5ZnRhb3Nwc3h6ZDJpczRs
+| Lm5ldDCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtotu9vNA80hUf0f1eN+n
+| lf6Hv/rqty7ah7lFb5OcCX4WY6xu5yVsIAvZPpzvtPQjDRHtd2WOKmEiIwjd8BTK
+| 09KtzvdLx6Lqgl0pmlIsWlMahibL7gV9JXyfNQ7yvNHzdIsj7SgEnTXM+sFmdSy4
+| gZq/XZaKpkw5LthJPYJieSECAwEAATANBgkqhkiG9w0BAQUFAAOBgQAHpGb/7cz5
+| ItIF1KpDQ+S1A5165KsAJ2q8bDPiwRaToOgaT4m1eUuxf9a36GNugo2/PQ11oe1Q
+| +a/Z2jj2/UlFxFTsmd76gujam+cnqQG5HVLB96s1YS66taOqNH4+IdHYdPd5JZol
+| 9MfBKM6R78nY9a4alj/Q3vdc1I4YJiAJZA==
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+22/tcp    open  ssh           OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 22:f5:bf:34:fe:87:46:4e:c3:e9:ef:c7:40:c9:7f:7a (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIjXjB05tc+RzXkFrCYhZkcTn5HNW2B3VSLgZJknhHAJ/pyDtoxyGST4SRU1CSbSv3JKZFbgjT8hFLHFguv84UA1xcNDoUjVVbg/vZoUwHFl3ZCzR/EcEufLNgZUpOop4rasB84ILE5YOxNLm8brXoJue+r8QCpl3ch46WjMN9n/AAAAFQChEiZoV+TcJhwz5LCkk0GJDWuc3wAAAIA87G3/LjtOcnqgWZ/HKX2nSwG/KOi+nYTmH6yI33jYtoRxtDEeIcckk6NCoUHcLqtoxkuRYjvuOJd2QonFI99u6CIi6BDxk9jPEhXwK4Z/V7mzRdOgnWxKSq3DuV2vnGS8oWo8nF3MCQ77SxcBklr2ddYazNKYEjZdYaJYPP543QAAAIBgoa8JpEzgZ/p1pHilsu0YLwvZZuy45yI99dPQghu14/DHBOXaoOmIU0D4r83+0YROgFC2My/Eq4O6zc96GVX8HqtZ0idk2xlKSTDlz9m9256+8VBdj8avD/YsBU6zn8Di9KJTDldxs3tfBzu6G+bnfOTlBLMLgneu9nxNloa0bg==
+|   2048 1b:c3:ef:66:ab:0f:1d:34:f3:f1:6b:9f:a4:ee:62:2f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC62SIykfJl9LLdB8aovOOEmE8vWKTQNNnloLkcljXZEZkkGTi4r174Bap6U/y9ihmynesSBrAdWTCre7D/SFkJmpFg8vk78XLqgrFQ6nTfiYVKk+ijafg3aBdM1NmqA6Vb2yYKZ5LTvX2wnyrsAURmzre1NYKOVrku3cWi/Oatg6Wy97fVLFVcaZmqfxzaNmepnXSBHvkcj3PfBCg9Dc7HEYhOWyLj8Pk6JIt4ieRWVVmrJN2SpV4R64Oaqe9Be2LHOL2VQbhLHD7oERHme5GWAjoyoHtPNgAi2X8iHHmHzOYM+h/vckNx/vL9JGArBrufJkzRvgHthGLqMXXb6aD7
+|   256 36:09:f1:bc:51:95:2d:31:fa:d3:0d:91:7c:71:a6:da (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEoI1V6XhqHT/guoB0+krjBUW5WNyO3mTWK8Tvjtf4/u65WJUkoK5DK0ZjroiccczVsT7qVMoQl0dVCTnCqFfWo=
+80/tcp    open  http          Apache httpd 2.2.22 ((Debian))
+|_http-favicon: Unknown favicon MD5: 74FDFF5710F65D1BD612DFA192533BCA
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.22 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+443/tcp   open  ssh           OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+| http-methods: 
+|_  Supported Methods: OPTIONS
+| ssh-hostkey: 
+|   1024 22:f5:bf:34:fe:87:46:4e:c3:e9:ef:c7:40:c9:7f:7a (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIjXjB05tc+RzXkFrCYhZkcTn5HNW2B3VSLgZJknhHAJ/pyDtoxyGST4SRU1CSbSv3JKZFbgjT8hFLHFguv84UA1xcNDoUjVVbg/vZoUwHFl3ZCzR/EcEufLNgZUpOop4rasB84ILE5YOxNLm8brXoJue+r8QCpl3ch46WjMN9n/AAAAFQChEiZoV+TcJhwz5LCkk0GJDWuc3wAAAIA87G3/LjtOcnqgWZ/HKX2nSwG/KOi+nYTmH6yI33jYtoRxtDEeIcckk6NCoUHcLqtoxkuRYjvuOJd2QonFI99u6CIi6BDxk9jPEhXwK4Z/V7mzRdOgnWxKSq3DuV2vnGS8oWo8nF3MCQ77SxcBklr2ddYazNKYEjZdYaJYPP543QAAAIBgoa8JpEzgZ/p1pHilsu0YLwvZZuy45yI99dPQghu14/DHBOXaoOmIU0D4r83+0YROgFC2My/Eq4O6zc96GVX8HqtZ0idk2xlKSTDlz9m9256+8VBdj8avD/YsBU6zn8Di9KJTDldxs3tfBzu6G+bnfOTlBLMLgneu9nxNloa0bg==
+|   2048 1b:c3:ef:66:ab:0f:1d:34:f3:f1:6b:9f:a4:ee:62:2f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC62SIykfJl9LLdB8aovOOEmE8vWKTQNNnloLkcljXZEZkkGTi4r174Bap6U/y9ihmynesSBrAdWTCre7D/SFkJmpFg8vk78XLqgrFQ6nTfiYVKk+ijafg3aBdM1NmqA6Vb2yYKZ5LTvX2wnyrsAURmzre1NYKOVrku3cWi/Oatg6Wy97fVLFVcaZmqfxzaNmepnXSBHvkcj3PfBCg9Dc7HEYhOWyLj8Pk6JIt4ieRWVVmrJN2SpV4R64Oaqe9Be2LHOL2VQbhLHD7oERHme5GWAjoyoHtPNgAi2X8iHHmHzOYM+h/vckNx/vL9JGArBrufJkzRvgHthGLqMXXb6aD7
+|   256 36:09:f1:bc:51:95:2d:31:fa:d3:0d:91:7c:71:a6:da (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEoI1V6XhqHT/guoB0+krjBUW5WNyO3mTWK8Tvjtf4/u65WJUkoK5DK0ZjroiccczVsT7qVMoQl0dVCTnCqFfWo=
+| ssl-cert: Subject: commonName=ISISIS/organizationName=SISISI/stateOrProvinceName=Panam/countryName=FR/organizationalUnitName=ISIS/localityName=panam
+| Issuer: commonName=ISISIS/organizationName=SISISI/stateOrProvinceName=Panam/countryName=FR/organizationalUnitName=ISIS/localityName=panam
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2014-02-27T09:08:32
+| Not valid after:  2034-02-22T09:08:32
+| MD5:   87ea f01b da4e f676 7be6 b4df 4ba2 7d7b
+| SHA-1: 519b 0ca6 7360 ce73 e4ce 58f3 7259 6c36 475b 5b9f
+| -----BEGIN CERTIFICATE-----
+| MIIDODCCAiACCQCoe7EnMfPWzjANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJG
+| UjEOMAwGA1UECAwFUGFuYW0xDjAMBgNVBAcMBXBhbmFtMQ8wDQYDVQQKDAZTSVNJ
+| U0kxDTALBgNVBAsMBElTSVMxDzANBgNVBAMMBklTSVNJUzAeFw0xNDAyMjcwOTA4
+| MzJaFw0zNDAyMjIwOTA4MzJaMF4xCzAJBgNVBAYTAkZSMQ4wDAYDVQQIDAVQYW5h
+| bTEOMAwGA1UEBwwFcGFuYW0xDzANBgNVBAoMBlNJU0lTSTENMAsGA1UECwwESVNJ
+| UzEPMA0GA1UEAwwGSVNJU0lTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAx7DWOeRzDcHYGiqG4Z1fJjuQYBX6uVbLj+5FAq9j2JUcPzsQMPYheHpvKIAE
+| idbn/5i6xKRADd0REGv14xymxndZvkxhoMv8IkeECc1/uMy7CXVVLxQ0LoX0jYTz
+| hauT+qFsYfXwCjRMm3srxS0vVJY09GP0x3Qq0P5cXysqbfjWf2JnrJ4nZCiigtIp
+| g0WgMfn4ETyJQvOYNGoVxX+taXuuNCGfihn5ZhWTHHRb+OPE7oCpWT03ODdxqGGr
+| 1g0lHBT5i6w1T+d9KffTptMoz/Cc3ecdp7AkdvbjCnr0cltD3fbocnqQ8tkBSmsd
+| osgIMaZ6sI1X4Q0MlQ+2X8JYbQIDAQABMA0GCSqGSIb3DQEBBQUAA4IBAQCdpjxD
+| Uzvkn65g2yuJ01V5X4pYsgqOvdT7CKvNozKExfMGXVjYwVecpiV/lvdaVTw57DPS
+| RTBJzMqMnWVST9lA6NIROIANUQJTu93NKcDkjHFDxbFA9knSU/k9IzHoi+CkM3q8
+| gw2gtsV+JN3NUNHcKiNBfWQz8r/JEzq/HtPJ6rJL6Oh9+kEKJPG6WmY8cKXl0nwQ
+| ATTTeL7aBbbY29Z4Iy9pPlnWei32Dk38PjtVB6LWf0jwsjlhnyOChhbBp1Uco15v
+| bWjfSbJM3n7D4poKCfrpWmRNRwPtGIGUYE+V7i0pD0dO00kM0hunjKzfkU52Va0q
+| XMlSQ4/ZDbm64wGD
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+1723/tcp  open  pptp          linux (Firmware: 1)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+| ssl-cert: Subject: commonName=dediboite-PC
+| Issuer: commonName=dediboite-PC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2019-07-01T23:00:33
+| Not valid after:  2019-12-31T23:00:33
+| MD5:   2b15 d135 6f9a dfca 000c 0fae 1511 561f
+| SHA-1: df5b b51b 6236 1e19 d47c 85d6 7c59 0eaf 084c b8c0
+| -----BEGIN CERTIFICATE-----
+| MIIC3DCCAcSgAwIBAgIQYd/gqPxcUZtOuvxBw/5N/TANBgkqhkiG9w0BAQUFADAX
+| MRUwEwYDVQQDEwxkZWRpYm9pdGUtUEMwHhcNMTkwNzAxMjMwMDMzWhcNMTkxMjMx
+| MjMwMDMzWjAXMRUwEwYDVQQDEwxkZWRpYm9pdGUtUEMwggEiMA0GCSqGSIb3DQEB
+| AQUAA4IBDwAwggEKAoIBAQDn9s1TXFsVF6xWZ835M3B19dqdhT0/huGXa/X+X0ZI
+| 1NR7jbLGVqaUhpPVy4xAoZXroiuh7qMi9RAADm5H2E9AWfMD1gWTRVHmI9dvQdvW
+| 79nKlYrpn3OtxBOKBEF2ajlwWq4pzX1MVG2WPixOM4f6iK/JEjjf8LHfUdr6KYXh
+| nN/+DxzFAMGRjImE4WV4btlPOOVPacuz132a/BTPGxewoRK+Ti7j1B0bmDM2CNdZ
+| qC/C+FGgUVQ2Gk6MGGxYLBsICvLuBjrUBo6g+pQr7fc9KZUgXd8YhLzX+PunoNAY
+| sVkw6+ftkKMytnZBh4oBES0D3w1O1EgNdRv+Jl9fOYmRAgMBAAGjJDAiMBMGA1Ud
+| JQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUFAAOCAQEA
+| DVQm9v625XAnzbVljwJKKMnBwRTUwyojQqEZ0Ta1ikKbJ/IkgGGMclZcWoG6w+gC
+| XZjZt0+LdxYj88J+Ag8ukTHLex16OIIu1J0n0VBB3sPzEHs19LkeqzAnw+LqmSOO
+| X6TWm/WB4hoE13BX3V3keH+lAj5Tb9o7+IbUdv5CgugaJumn75zebkbX06o68SWU
+| MjgcgTGY63/Rl0yL+FP8u7VFYr9FgbJB7HKAWdfIIC9cpKh3uL8jRL2hCK1zotat
+| ZEma5AXTNxg6OJQl5SACCjDKQILTtDOeC4AE9FeByYud3M0GrovfyBIu+HVjbEmy
+| 9V7xiLzaMZmexePN0hqm0w==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2019-07-07T13:23:32+00:00; -24s from scanner time.
+5666/tcp  open  tcpwrapped
+8888/tcp  open  ssl/http      Apache httpd 2.4.29 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Nextcloud
+| ssl-cert: Subject: commonName=nextcloud
+| Subject Alternative Name: DNS:nextcloud
+| Issuer: commonName=nextcloud
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-12-11T17:23:50
+| Not valid after:  2028-12-08T17:23:50
+| MD5:   9376 88b6 f491 578a e2f8 3f81 8221 3a6f
+| SHA-1: dda5 90bd 0821 0aee dc34 d2d9 4356 a4ba 2999 f1c4
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIJAMG8TpLNoaj1MA0GCSqGSIb3DQEBCwUAMBQxEjAQBgNV
+| BAMMCW5leHRjbG91ZDAeFw0xODEyMTExNzIzNTBaFw0yODEyMDgxNzIzNTBaMBQx
+| EjAQBgNVBAMMCW5leHRjbG91ZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+| ggEBAMeDOZzT4TZ8FzUFhla1c6kpbahBVHxAJi05s7K3YVVsNspkboDnFeE69tvM
+| HBLMTbmcCde8B4ct3xbjUSbXBUXy6a9XX/51XJekeVNhHWnJHGo53V9rvyHRJxPO
+| EwAm2ZneVtfp7ZGgQFvS5sWMRSMqZ0+6lzQ741/xI8Rj5X+ljIGhYQdN8U23Kkw6
+| BwHVXGMFdDvifDwL5yuZ/IAzzUqUBmQB0gpCFOeU6CBNMYcznLLAOm4tb5lbbN8N
+| 5jCqLicStQo9K/tCWK/eUbBMGs5obXoykXGYxm7h1wd4iUKsVWkKmdIvYoEmQObq
+| Zaamg4ZefnvuXPvdWi0X9D18NtECAwEAAaMjMCEwCQYDVR0TBAIwADAUBgNVHREE
+| DTALggluZXh0Y2xvdWQwDQYJKoZIhvcNAQELBQADggEBACeu5myA0ac8cc0r65Pj
+| SrqZ7bzuPranKaYuIrwrBY097EEnOgAjadRVVG+2urcm3E4egzgZq0yCmc6a5LUI
+| XLWZI2AaEkxMHYXvt8FLB+wW1KDb2nI7bM07IPu7er/DESG8tcHitLAymUSDYZls
+| Ne/QwE/fEYWBfgmU+u6/XQjGIUv4frZYJiGngS+C1hwGRKpB0AAbcD1L9ZvEWbtS
+| 3xxNjiYfz87zKXlOGoCHI8zEHEsL2aB+9wH6f2MOjT3yRvosOYw5dAivZgL+SMI6
+| lJ7rplYQMAmUvQh4r1TtfRy+1t3xekgfwxgDxCO3pBLQloHNwY3TvaD/XjM1HRmg
+| HAo=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+12345/tcp open  http          ZNC IRC bouncer http config 0.097 or later
+| http-cookie-flags: 
+|   /: 
+|     12345-SessionId: 
+|_      httponly flag not set
+|_http-favicon: Unknown favicon MD5: 33B04FB9F2EC918F5F14B41527E77F6D
+| http-methods: 
+|_  Supported Methods: GET POST
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: ZNC - http://znc.in
+|_http-title: ZNC - Web Frontend
+Service Info: Host: local; OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -24s, deviation: 0s, median: -24s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul  7 15:25:06 2019 -- 1 IP address (1 host up) scanned in 249.85 seconds

@@ -1,0 +1,80 @@
+# Nmap 7.60 scan initiated Sun Jul  7 15:30:33 2019 as: nmap -sC -sV -p- -oA seb_allports 62.210.206.53
+Nmap scan report for pssbackup.pss-network.com (62.210.206.53)
+Host is up (0.017s latency).
+Not shown: 65522 filtered ports
+PORT      STATE  SERVICE        VERSION
+21/tcp    open   ssl/ftp?
+| ssl-cert: Subject: commonName=www.qxone4yznpaeeslp.net
+| Not valid before: 2019-02-13T00:00:00
+|_Not valid after:  2020-01-03T00:00:00
+|_ssl-date: TLS randomness does not represent time
+22/tcp    open   ssh            OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 22:f5:bf:34:fe:87:46:4e:c3:e9:ef:c7:40:c9:7f:7a (DSA)
+|   2048 1b:c3:ef:66:ab:0f:1d:34:f3:f1:6b:9f:a4:ee:62:2f (RSA)
+|_  256 36:09:f1:bc:51:95:2d:31:fa:d3:0d:91:7c:71:a6:da (ECDSA)
+80/tcp    open   http           Apache httpd 2.2.22 ((Debian))
+|_http-server-header: Apache/2.2.22 (Debian)
+|_http-title: Site doesn't have a title (text/html).
+443/tcp   open   ssh            OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 22:f5:bf:34:fe:87:46:4e:c3:e9:ef:c7:40:c9:7f:7a (DSA)
+|   2048 1b:c3:ef:66:ab:0f:1d:34:f3:f1:6b:9f:a4:ee:62:2f (RSA)
+|_  256 36:09:f1:bc:51:95:2d:31:fa:d3:0d:91:7c:71:a6:da (ECDSA)
+| ssl-cert: Subject: commonName=ISISIS/organizationName=SISISI/stateOrProvinceName=Panam/countryName=FR
+| Not valid before: 2014-02-27T09:08:32
+|_Not valid after:  2034-02-22T09:08:32
+|_ssl-date: TLS randomness does not represent time
+1723/tcp  open   pptp           linux (Firmware: 1)
+2424/tcp  open   ssl/kofax-svr?
+3389/tcp  open   ms-wbt-server  Microsoft Terminal Service
+| ssl-cert: Subject: commonName=dediboite-PC
+| Not valid before: 2019-07-01T23:00:33
+|_Not valid after:  2019-12-31T23:00:33
+|_ssl-date: 2019-07-07T13:34:47+00:00; -24s from scanner time.
+5666/tcp  open   tcpwrapped
+8888/tcp  open   ssl/http       Apache httpd 2.4.29 ((Ubuntu))
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Nextcloud
+| ssl-cert: Subject: commonName=nextcloud
+| Subject Alternative Name: DNS:nextcloud
+| Not valid before: 2018-12-11T17:23:50
+|_Not valid after:  2028-12-08T17:23:50
+|_ssl-date: TLS randomness does not represent time
+9030/tcp  open   http           Tor directory
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Site doesn't have a title.
+12345/tcp open   http           ZNC IRC bouncer http config 0.097 or later
+| http-cookie-flags: 
+|   /: 
+|     12345-SessionId: 
+|_      httponly flag not set
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: ZNC - http://znc.in
+|_http-title: ZNC - Web Frontend
+17459/tcp open   ssl/http       uTorrent utserver web interface
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=uTorrent
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: countryName=US,ST=CA,L=San Francisco,O=BitTorrent,OU=uTorrent,CN=uTorrent
+| Not valid before: 2014-07-03T12:56:46
+|_Not valid after:  2015-07-03T18:56:46
+|_ssl-date: 2019-07-07T13:34:47+00:00; -25s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+51413/tcp closed unknown
+Service Info: Host: local; OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -24s, deviation: 0s, median: -25s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul  7 15:36:29 2019 -- 1 IP address (1 host up) scanned in 356.27 seconds
