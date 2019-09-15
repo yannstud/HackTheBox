@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Sun Jul  7 15:30:33 2019 as: nmap -sC -sV -p- -oA seb_allports 62.210.206.53
-Host: 62.210.206.53 (pssbackup.pss-network.com)	Status: Up
-Host: 62.210.206.53 (pssbackup.pss-network.com)	Ports: 21/open/tcp//ssl|ftp?///, 22/open/tcp//ssh//OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.2.22 ((Debian))/, 443/open/tcp//ssh//OpenSSH 6.0p1 Debian 4+deb7u7 (protocol 2.0)/, 1723/open/tcp//pptp//linux (Firmware: 1)/, 2424/open/tcp//ssl|kofax-svr?///, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Service/, 5666/open/tcp//tcpwrapped///, 8888/open/tcp//ssl|http//Apache httpd 2.4.29 ((Ubuntu))/, 9030/open/tcp//http//Tor directory/, 12345/open/tcp//http//ZNC IRC bouncer http config 0.097 or later/, 17459/open/tcp//ssl|http//uTorrent utserver web interface/, 51413/closed/tcp//unknown///	Ignored State: filtered (65522)
-# Nmap done at Sun Jul  7 15:36:29 2019 -- 1 IP address (1 host up) scanned in 356.27 seconds
