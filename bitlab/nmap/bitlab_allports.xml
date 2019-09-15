@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Thu Sep 12 14:13:39 2019 as: nmap -sC -sV -p- -oA bitlab_allports 10.10.10.114 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA bitlab_allports 10.10.10.114" start="1568290419" startstr="Thu Sep 12 14:13:39 2019" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1568290420" endtime="1568290543"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.114" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a2:3b:b0:dd:28:91:bf:e8:f9:30:82:31:23:2f:92:18 (RSA)&#xa;  256 e6:3b:fb:b3:7f:9a:35:a8:bd:d0:27:7b:25:d4:ed:dc (ECDSA)&#xa;  256 c9:54:3d:91:01:78:03:ab:16:14:6b:cc:f0:b7:3a:55 (EdDSA)"><table>
+<elem key="fingerprint">a23bb0dd2891bfe8f9308231232f9218</elem>
+<elem key="bits">2048.0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDSCR2AISBaUSpQGOWjsr3qEJ0/8CcRP0256a8V8+RP3/s8C2JjPF0VpQ0yREJi5GcaxaUT71Z/Iu4L+zSuGErOswMYOASHTsLQ1OiOX+pFPGos7dCho50xTZW/t7fznxpOZz5Z/q2vw68B+9w3nYBuSHgcOCJl9UVhd7nyzxdaTScQg3CLy3LbOmERh1PN/sVTYEncJgVZjZAWNj3Y1WCIsQaJS24IWHjDKv883oEVgRr9K7aF95SSpLdH1aG/uvQFEoYsE+/WvqD8lPZ+nbxmGVZWHVdHzKDHXJZTcMosAYi/OAdb8qrb17Rs1Uq66caY/GnTRMDNI73HK4PfUeQp</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">e63bfbb37f9a35a8bdd0277b25d4eddc</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOTiIG0kUQzECqcEHxHyiK1WbdkW2Ncwk5twrushVNzzMgnydxaua2m3mg5k8UWt1HXeUOyUxTpXaoaPa7Gclg4=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">c9543d91017803ab16146bccf0b73a55</elem>
+<elem key="bits">256</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIMsgauIgMgKCiPSybbXatTK8ZsAgv7xsrJsR5FZ5M77i</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-robots.txt" output="55 disallowed entries (15 shown)&#xa;/ /autocomplete/users /search /api /admin /profile &#xa;/dashboard /projects/new /groups/new /groups/*/edit /users /help &#xa;/s/ /snippets/new /snippets/*/edit"/><script id="http-server-header" output="nginx"><elem>nginx</elem>
+</script><script id="http-title" output="Sign in \xC2\xB7 GitLab&#xa;Requested resource was http://10.10.10.114/users/sign_in"><elem key="title">Sign in \xC2\xB7 GitLab</elem>
+<elem key="redirect_url">http://10.10.10.114/users/sign_in</elem>
+</script></port>
+</ports>
+<times srtt="31842" rttvar="12001" to="100000"/>
+</host>
+<runstats><finished time="1568290543" timestr="Thu Sep 12 14:15:43 2019" elapsed="123.14" summary="Nmap done at Thu Sep 12 14:15:43 2019; 1 IP address (1 host up) scanned in 123.14 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

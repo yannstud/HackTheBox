@@ -1,0 +1,14 @@
+POST /users/sign_in HTTP/1.1
+Host: 10.10.10.114
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:69.0) Gecko/20100101 Firefox/69.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Referer: http://10.10.10.114/users/sign_in
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 203
+Connection: close
+Cookie: _gitlab_session=e591824c7e980cb9d5ab644da0e10010; sidebar_collapsed=false
+Upgrade-Insecure-Requests: 1
+
+utf8=%E2%9C%93&authenticity_token=IfiTfyTeEDkd0ykTnLZAH7GUy8wuhfDvG5BH8xMFtzih%2FTFRzPYw5IrTWD8LLegODybHo%2BCVN%2F6IxqZwDWNTRA%3D%3D&user%5Blogin%5D=admin&user%5Bpassword%5D=admin&user%5Bremember_me%5D=0

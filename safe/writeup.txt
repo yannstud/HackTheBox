@@ -1,0 +1,13 @@
+port 80 
+	nothing seems interesting:
+				authorized: 
+					manual
+				unauthorized:
+					htaccess 
+					htpasswd 
+					serverstatus
+			
+
+port 1337 
+	nc 10.10.10.147 1337
+	What do you want me to echo back?

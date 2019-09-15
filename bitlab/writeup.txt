@@ -1,0 +1,37 @@
+bitlab --> gitlab 
+
+http://10.10.10.114/help/bookmarks.html
+
+la href gitlab login:
+var _0x4b18=['\x76\x61\x6C\x75\x65','\x75\x73\x65\x72\x5F\x6C\x6F\x67\x69\x6E','\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64','\x63\x6C\x61\x76\x65','\x75\x73\x65\x72\x5F\x70\x61\x73\x73\x77\x6F\x72\x64','\x31\x31\x64\x65\x73\x30\x30\x38\x31\x78'];
+        document[_0x4b18[2]](_0x4b18[1])[_0x4b18[0]]= _0x4b18[3];document[_0x4b18[2]](_0x4b18[4])[_0x4b18[0]]= _0x4b18[5]; })()"
+
+decode dans la console navigateur :
+pour ce faire on prends les valeurs de la variable et on l'affiche dans la console !
+
+0: "value"
+​
+1: "user_login"
+​
+2: "getElementById"
+​
+3: "clave"
+​
+4: "user_password"
+​
+5: "11des0081x"
+
+se login avec user clave, password 11des0081x
+
+depuis la web-app on peut creer des fichiers dans le projet profile 
+ce qui nous permet de creer un fichier php de reverseshell et de se log as www-data sur le server 
+
+selon sudo -l on peut utiliser sudo sans mot de passe pour la commande git pull ...
+
+depuis www-data on peut copier le fichier /var/www/html/profile/ dans /tmp pour pourvoir le modifier
+dans /tmp/profile/.git/hooks creer un fichier post-merge qui contiendras a nouveau un reverseshell 
+creer un nouveau random fichier dans la web-app 
+sudo git pull 
+la post-merge request qui viendras avec le sudo git pull est executee as root 
+
+GOODWIN
