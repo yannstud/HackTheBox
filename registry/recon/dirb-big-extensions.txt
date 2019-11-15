@@ -1,0 +1,143 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 13:50:24 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+EXTENSIONS_FILE: .php,.html | 
+(!) FATAL: Error opening words file: .php,.html
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 13:50:49 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+EXTENSIONS_FILE: .php | 
+(!) FATAL: Error opening words file: .php
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 13:52:08 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+EXTENSIONS_FILE: .php | 
+(!) FATAL: Error opening words file: .php
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 13:52:18 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+EXTENSIONS_LIST: (.php,.html) | (.php)(.html) [NUM = 2]
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.159/ ----
++ http://10.10.10.159/backup.php (CODE:200|SIZE:0)
++ http://10.10.10.159/index.html (CODE:200|SIZE:612)
+
+-----------------
+END_TIME: Fri Oct 25 14:00:41 2019
+DOWNLOADED: 40916 - FOUND: 2
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 14:25:01 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+EXTENSIONS_LIST: (.php,.html) | (.php)(.html) [NUM = 2]
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.159/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 14:25:34 2019
+URL_BASE: https://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+EXTENSIONS_LIST: (.php,.html) | (.php)(.html) [NUM = 2]
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.10.10.159/ ----
++ https://10.10.10.159/backup.php (CODE:200|SIZE:0)
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 14:27:44 2019
+URL_BASE: https://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+CLIENT_CERTIFICATE: /home/floki/HackTheBox/registry/certif.crt
+EXTENSIONS_LIST: (.php,.html) | (.php)(.html) [NUM = 2]
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.10.10.159/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: SSL CERTIFICATE PROBLEM)
+
+-----------------
+END_TIME: Fri Oct 25 14:27:46 2019
+DOWNLOADED: 0 - FOUND: 0
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big-extensions.txt
+START_TIME: Fri Oct 25 14:27:54 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+CLIENT_CERTIFICATE: /home/floki/HackTheBox/registry/certif.crt
+EXTENSIONS_LIST: (.php,.html) | (.php)(.html) [NUM = 2]
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.159/ ----
++ http://10.10.10.159/backup.php (CODE:200|SIZE:0)
++ http://10.10.10.159/index.html (CODE:200|SIZE:612)
+
+-----------------
+END_TIME: Fri Oct 25 14:36:22 2019
+DOWNLOADED: 40916 - FOUND: 2

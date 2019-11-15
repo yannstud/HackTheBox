@@ -1,0 +1,103 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big.txt
+START_TIME: Fri Oct 25 13:49:08 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.159/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big.txt
+START_TIME: Fri Oct 25 13:49:54 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.159/ ----
+==> DIRECTORY: http://10.10.10.159/install/
+
+---- Entering directory: http://10.10.10.159/install/ ----
+
+-----------------
+END_TIME: Fri Oct 25 13:58:17 2019
+DOWNLOADED: 40916 - FOUND: 0
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big.txt
+START_TIME: Fri Oct 25 14:25:56 2019
+URL_BASE: https://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.10.10.159/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big.txt
+START_TIME: Fri Oct 25 14:26:52 2019
+URL_BASE: https://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+CLIENT_CERTIFICATE: /home/floki/HackTheBox/registry/certif.crt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: https://10.10.10.159/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: SSL CERTIFICATE PROBLEM)
+
+-----------------
+END_TIME: Fri Oct 25 14:26:54 2019
+DOWNLOADED: 0 - FOUND: 0
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb-big.txt
+START_TIME: Fri Oct 25 14:27:00 2019
+URL_BASE: http://10.10.10.159/
+WORDLIST_FILES: /usr/share/dirb/wordlists/big.txt
+CLIENT_CERTIFICATE: /home/floki/HackTheBox/registry/certif.crt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.159/ ----
+==> DIRECTORY: http://10.10.10.159/install/
+
+---- Entering directory: http://10.10.10.159/install/ ----
+
+-----------------
+END_TIME: Fri Oct 25 14:35:27 2019
+DOWNLOADED: 40916 - FOUND: 0
