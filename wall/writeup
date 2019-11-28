@@ -1,0 +1,18 @@
+/monitoring found 
+
+VERB juggling gave us : /centreon
+
+need to connect here  ---- rabbit hole -----
+
+/centreon/api
+GET /centreon/api/index.php?action=authenticate&username=root&password=root HTTP/1.1
+need to fuzz username/ password here
+
+username : Admin 
+password : password1
+
+use tre proper exploit vuln.py 
+
+exploit wall outdated binary with the exploit 
+
+done
