@@ -18,3 +18,19 @@ $ python3 resolve.py
 
 ssh robert@10.10.10.168
 password ;)
+
+➜  obscurity git:(master) ✗ john shadow.txt 
+Using default input encoding: UTF-8
+Loaded 2 password hashes with 2 different salts (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 4 OpenMP threads
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+Proceeding with wordlist:/snap/john-the-ripper/current/run/password.lst, rules:Wordlist
+mercedes         (?)
+
+su root
+mercedes
+
+izi
