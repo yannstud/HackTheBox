@@ -1,0 +1,11 @@
+# Nmap 7.60 scan initiated Fri Dec  6 15:47:43 2019 as: nmap -p- -oA obscurity_allports 10.10.10.168
+Nmap scan report for obscure.htb (10.10.10.168)
+Host is up (0.085s latency).
+Not shown: 65531 filtered ports
+PORT     STATE  SERVICE
+22/tcp   open   ssh
+80/tcp   closed http
+8080/tcp open   http-proxy
+9000/tcp closed cslistener
+
+# Nmap done at Fri Dec  6 15:50:33 2019 -- 1 IP address (1 host up) scanned in 170.04 seconds

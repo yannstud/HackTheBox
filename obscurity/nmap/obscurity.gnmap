@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Dec  6 15:24:23 2019 as: nmap -sC -sV -oA obscurity 10.10.10.168
+Host: 10.10.10.168 ()	Status: Up
+Host: 10.10.10.168 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/closed/tcp//http///, 8080/open/tcp//http-proxy//BadHTTPServer/, 9000/closed/tcp//cslistener///	Ignored State: filtered (996)
+# Nmap done at Fri Dec  6 15:24:45 2019 -- 1 IP address (1 host up) scanned in 21.50 seconds

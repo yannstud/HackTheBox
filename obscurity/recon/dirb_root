@@ -1,0 +1,103 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root
+START_TIME: Fri Dec  6 15:27:00 2019
+URL_BASE: http://10.10.10.168:8080/
+WORDLIST_FILES: /usr/share/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.168:8080/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root
+START_TIME: Fri Dec  6 15:30:01 2019
+URL_BASE: http://10.10.10.168:8080/
+WORDLIST_FILES: /usr/share/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.168:8080/ ----
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root
+START_TIME: Fri Dec  6 15:39:45 2019
+URL_BASE: http://10.10.10.168:8080/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+EXTENSIONS_FILE: /usr/share/wordlists/extensions_common.txt | ()(.asp)(.aspx)(.bat)(.c)(.cfm)(.cgi)(.com)(.dll)(.exe)(.htm)(.html)(.inc)(.jhtml)(.jsa)(.jsp)(.log)(.mdb)(.nsf)(.php)(.phtml)(.pl)(.reg)(.sh)(.shtml)(.sql)(.txt)(.xml)(/) [NUM = 29]
+
+-----------------
+
+
+(!) FATAL: Error opening wordlist file: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root
+START_TIME: Fri Dec  6 15:39:58 2019
+URL_BASE: http://10.10.10.168:8080/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+EXTENSIONS_FILE: /usr/share/wordlists/extensions_common.txt | ()(.asp)(.aspx)(.bat)(.c)(.cfm)(.cgi)(.com)(.dll)(.exe)(.htm)(.html)(.inc)(.jhtml)(.jsa)(.jsp)(.log)(.mdb)(.nsf)(.php)(.phtml)(.pl)(.reg)(.sh)(.shtml)(.sql)(.txt)(.xml)(/) [NUM = 29]
+
+-----------------
+
+
+(!) FATAL: Error opening wordlist file: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root
+START_TIME: Fri Dec  6 15:40:24 2019
+URL_BASE: http://10.10.10.168:8080/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+EXTENSIONS_FILE: /usr/share/wordlists/extensions_common.txt | ()(.asp)(.aspx)(.bat)(.c)(.cfm)(.cgi)(.com)(.dll)(.exe)(.htm)(.html)(.inc)(.jhtml)(.jsa)(.jsp)(.log)(.mdb)(.nsf)(.php)(.phtml)(.pl)(.reg)(.sh)(.shtml)(.sql)(.txt)(.xml)(/) [NUM = 29]
+
+-----------------
+
+
+(!) FATAL: Error opening wordlist file: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb_root
+START_TIME: Fri Dec  6 15:52:42 2019
+URL_BASE: http://10.10.10.168:8080/
+WORDLIST_FILES: /usr/share/wordlists/big.txt
+
+-----------------
+
+GENERATED WORDS: 20458
+
+---- Scanning URL: http://10.10.10.168:8080/ ----
+
+(!) FATAL: Too many errors connecting to host
+    (Possible cause: EMPTY REPLY FROM SERVER)
+
+-----------------
+END_TIME: Fri Dec  6 16:57:14 2019
+DOWNLOADED: 16063 - FOUND: 0

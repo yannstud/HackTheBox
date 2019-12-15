@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Fri Dec  6 15:47:43 2019 as: nmap -p- -oA obscurity_allports 10.10.10.168
+Host: 10.10.10.168 (obscure.htb)	Status: Up
+Host: 10.10.10.168 (obscure.htb)	Ports: 22/open/tcp//ssh///, 80/closed/tcp//http///, 8080/open/tcp//http-proxy///, 9000/closed/tcp//cslistener///	Ignored State: filtered (65531)
+# Nmap done at Fri Dec  6 15:50:33 2019 -- 1 IP address (1 host up) scanned in 170.04 seconds
