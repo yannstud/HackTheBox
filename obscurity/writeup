@@ -19,6 +19,16 @@ $ python3 resolve.py
 ssh robert@10.10.10.168
 password ;)
 
+Le script dans BetterSSH se lance as sudo
+	prend nos inputs 
+	dechiffre /etc/shadow
+	copie la data dans un fichier dans /tmp/SSH (besoin de creer le dossier)
+	compare data == ficher 
+	
+donc on cree check_folder.py qui prends le fichier et le copie dans /tmp/pass 
+
+suffit de passer le hash dans john 
+
 ➜  obscurity git:(master) ✗ john shadow.txt 
 Using default input encoding: UTF-8
 Loaded 2 password hashes with 2 different salts (sha512crypt, crypt(3) $6$ [SHA512 256/256 AVX2 4x])
