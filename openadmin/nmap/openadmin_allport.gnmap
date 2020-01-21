@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Mon Jan 20 10:05:53 2020 as: nmap -p- -oA openadmin_allport 10.10.10.171
+Host: 10.10.10.171 ()	Status: Up
+Host: 10.10.10.171 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (65533)
+# Nmap done at Mon Jan 20 10:17:00 2020 -- 1 IP address (1 host up) scanned in 667.45 seconds
