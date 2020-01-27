@@ -18,7 +18,5 @@ so i can connect and enum as melanie with smbclient - smbmap
 	
 	```bash
 	smbmap -u melanie -H 10.10.10.169 -p Welcome123!
-	```
-	```bash
 	smbclient //10.10.10.169/SYSVOL -U melanie -p
 	```
