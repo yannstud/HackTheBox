@@ -1,0 +1,12 @@
+Sur http://10.10.10.171:8000/ on peut trouver les fichiers suivants :
+	index.php
+	logoup.php
+	main.php 
+
+Telecharges dans les sources
+
+index.php :
+if ($_POST['username'] == 'jimmy' && hash('sha512',$_POST['password']) == '00e302ccdcf1c60b8ad50ea50cf72b939705f49f40f0dc658801b4680b7d758eebdc2e9f9ba8ba3ef8a8bb9a796d34ba2e856838ee9bdde852b8ec3b3a0523b1')
+
+utiliser l'exploit as $> sh exploit.sh URL 
+taper des commander upload un reverseshell 

