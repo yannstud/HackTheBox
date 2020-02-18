@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sat Feb 15 13:21:42 2020 as: nmap -sC -sV -p- -oA allports 10.10.10.160 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p- -oA allports 10.10.10.160" start="1581769302" startstr="Sat Feb 15 13:21:42 2020" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<taskprogress task="Connect Scan" time="1581769377" percent="21.95" remaining="267" etc="1581769644"/>
+<taskprogress task="Connect Scan" time="1581769378" percent="22.49" remaining="262" etc="1581769640"/>
+<taskprogress task="Connect Scan" time="1581769379" percent="22.78" remaining="261" etc="1581769640"/>
+<taskprogress task="Connect Scan" time="1581769398" percent="28.31" remaining="244" etc="1581769641"/>
+<taskprogress task="Connect Scan" time="1581769399" percent="28.79" remaining="240" etc="1581769639"/>
+<taskprogress task="Connect Scan" time="1581769401" percent="29.16" remaining="241" etc="1581769641"/>
+<taskprogress task="Connect Scan" time="1581769401" percent="29.27" remaining="240" etc="1581769640"/>
+<taskprogress task="Connect Scan" time="1581769401" percent="29.32" remaining="239" etc="1581769640"/>
+<taskprogress task="Connect Scan" time="1581769401" percent="29.36" remaining="239" etc="1581769639"/>
+<taskprogress task="Connect Scan" time="1581769431" percent="38.11" remaining="210" etc="1581769640"/>
+<taskprogress task="Connect Scan" time="1581769461" percent="47.17" remaining="179" etc="1581769639"/>
+<taskprogress task="Connect Scan" time="1581769476" percent="51.74" remaining="163" etc="1581769638"/>
+<taskprogress task="Connect Scan" time="1581769476" percent="51.81" remaining="162" etc="1581769638"/>
+<taskprogress task="Connect Scan" time="1581769476" percent="51.86" remaining="162" etc="1581769637"/>
+<taskprogress task="Connect Scan" time="1581769506" percent="60.58" remaining="133" etc="1581769639"/>
+<taskprogress task="Connect Scan" time="1581769536" percent="69.67" remaining="102" etc="1581769638"/>
+<taskprogress task="Connect Scan" time="1581769548" percent="73.42" remaining="90" etc="1581769637"/>
+<taskprogress task="Connect Scan" time="1581769578" percent="82.42" remaining="59" etc="1581769637"/>
+<taskprogress task="Connect Scan" time="1581769635" percent="99.63" remaining="2" etc="1581769636"/>
+<taskend task="Connect Scan" time="1581769636" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1581769637"/>
+<taskend task="Service scan" time="1581769643" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1581769643"/>
+<taskend task="NSE" time="1581769673"/>
+<taskbegin task="NSE" time="1581769673"/>
+<taskend task="NSE" time="1581769673"/>
+<host starttime="1581769302" endtime="1581769673"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.160" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65531">
+<extrareasons reason="conn-refused" count="65531"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 46:83:4f:f1:38:61:c0:1c:74:cb:b5:d1:4a:68:4d:77 (RSA)&#xa;  256 2d:8d:27:d2:df:15:1a:31:53:05:fb:ff:f0:62:26:89 (ECDSA)&#xa;  256 ca:7c:82:aa:5a:d3:72:ca:8b:8a:38:3a:80:41:a0:45 (EdDSA)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">46834ff13861c01c74cbb5d14a684d77</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDem1MnCQG+yciWyLak5YeSzxh4HxjCgxKVfNc1LN+vE1OecEx+cu0bTD5xdQJmyKEkpZ+AVjhQo/esF09a94eMNKcp+bhK1g3wqzLyr6kwE0wTncuKD2bA9LCKOcM6W5GpHKUywB5A/TMPJ7UXeygHseFUZEa+yAYlhFKTt6QTmkLs64sqCna+D/cvtKaB4O9C+DNv5/W66caIaS/B/lPeqLiRoX1ad/GMacLFzqCwgaYeZ9YBnwIstsDcvK9+kCaUE7g2vdQ7JtnX0+kVlIXRi0WXta+BhWuGFWtOV0NYM9IDRkGjSXA4qOyUOBklwvienPt1x2jBrjV8v3p78Tzz</elem>
+<elem key="bits">2048.0</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">2d8d27d2df151a315305fbfff0622689</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIRgCn2sRihplwq7a2XuFsHzC9hW+qA/QsZif9QKAEBiUK6jv/B+UxDiPJiQp3KZ3tX6Arff/FC0NXK27c3EppI=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">ca7c82aa5ad372ca8b8a383a8041a045</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIF3FKsLVdJ5BN8bLpf80Gw89+4wUslxhI3wYfnS+53Xd</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.29" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.29</cpe></service><script id="http-favicon" output="Unknown favicon MD5: E234E3E8040EFB1ACD7028330A956EBF"/><script id="http-methods" output="&#xa;  Supported Methods: GET POST OPTIONS HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.29 (Ubuntu)"><elem>Apache/2.4.29 (Ubuntu)</elem>
+</script><script id="http-title" output="The Cyber Geek&apos;s Personal Website"><elem key="title">The Cyber Geek&apos;s Personal Website</elem>
+</script></port>
+<port protocol="tcp" portid="6379"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="redis" product="Redis key-value store" version="4.0.9" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="MiniServ" version="1.910" extrainfo="Webmin httpd" method="probed" conf="10"/><script id="http-favicon" output="Unknown favicon MD5: 91549383E709F4F1DD6C8DAB07890301"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; Charset=iso-8859-1)."></script></port>
+</ports>
+<times srtt="45965" rttvar="7860" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1581769673"/>
+<taskend task="NSE" time="1581769673"/>
+<taskbegin task="NSE" time="1581769673"/>
+<taskend task="NSE" time="1581769673"/>
+<runstats><finished time="1581769673" timestr="Sat Feb 15 13:27:53 2020" elapsed="371.19" summary="Nmap done at Sat Feb 15 13:27:53 2020; 1 IP address (1 host up) scanned in 371.19 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
