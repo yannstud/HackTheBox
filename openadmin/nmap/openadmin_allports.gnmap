@@ -1,0 +1,4 @@
+# Nmap 7.60 scan initiated Sun Jan 12 20:40:34 2020 as: nmap -sC -sV -p- -oA openadmin_allports 10.10.10.171
+Host: 10.10.10.171 ()	Status: Up
+Host: 10.10.10.171 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 8000/open/tcp//http//SimpleHTTPServer 0.6 (Python 3.6.8)/	Ignored State: closed (65532)
+# Nmap done at Sun Jan 12 20:40:50 2020 -- 1 IP address (1 host up) scanned in 15.90 seconds
