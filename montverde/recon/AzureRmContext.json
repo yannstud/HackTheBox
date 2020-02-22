@@ -1,0 +1,61 @@
+﻿{
+  "DefaultContextKey": "372efea9-7bc4-4b76-8839-984b45edfb98 - john@a67632354763outlook.onmicrosoft.com",
+  "EnvironmentTable": {},
+  "Contexts": {
+    "372efea9-7bc4-4b76-8839-984b45edfb98 - john@a67632354763outlook.onmicrosoft.com": {
+      "Account": {
+        "Id": "john@a67632354763outlook.onmicrosoft.com",
+        "Credential": null,
+        "Type": "User",
+        "TenantMap": {},
+        "ExtendedProperties": {
+          "Tenants": "372efea9-7bc4-4b76-8839-984b45edfb98"
+        }
+      },
+      "Tenant": {
+        "Id": "372efea9-7bc4-4b76-8839-984b45edfb98",
+        "Directory": null,
+        "ExtendedProperties": {}
+      },
+      "Subscription": null,
+      "Environment": {
+        "Name": "AzureCloud",
+        "OnPremise": false,
+        "ServiceManagementUrl": "https://management.core.windows.net/",
+        "ResourceManagerUrl": "https://management.azure.com/",
+        "ManagementPortalUrl": "https://go.microsoft.com/fwlink/?LinkId=254433",
+        "PublishSettingsFileUrl": "https://go.microsoft.com/fwlink/?LinkID=301775",
+        "ActiveDirectoryAuthority": "https://login.microsoftonline.com/",
+        "GalleryUrl": "https://gallery.azure.com/",
+        "GraphUrl": "https://graph.windows.net/",
+        "ActiveDirectoryServiceEndpointResourceId": "https://management.core.windows.net/",
+        "StorageEndpointSuffix": "core.windows.net",
+        "SqlDatabaseDnsSuffix": ".database.windows.net",
+        "TrafficManagerDnsSuffix": "trafficmanager.net",
+        "AzureKeyVaultDnsSuffix": "vault.azure.net",
+        "AzureKeyVaultServiceEndpointResourceId": "https://vault.azure.net",
+        "GraphEndpointResourceId": "https://graph.windows.net/",
+        "DataLakeEndpointResourceId": "https://datalake.azure.net/",
+        "BatchEndpointResourceId": "https://batch.core.windows.net/",
+        "AzureDataLakeAnalyticsCatalogAndJobEndpointSuffix": "azuredatalakeanalytics.net",
+        "AzureDataLakeStoreFileSystemEndpointSuffix": "azuredatalakestore.net",
+        "AdTenant": "Common",
+        "VersionProfiles": [],
+        "ExtendedProperties": {
+          "OperationalInsightsEndpoint": "https://api.loganalytics.io/v1",
+          "OperationalInsightsEndpointResourceId": "https://api.loganalytics.io",
+          "AzureAnalysisServicesEndpointSuffix": "asazure.windows.net",
+          "AnalysisServicesEndpointResourceId": "https://region.asazure.windows.net",
+          "AzureAttestationServiceEndpointSuffix": "attest.azure.net",
+          "AzureAttestationServiceEndpointResourceId": "https://attest.azure.net"
+        }
+      },
+      "VersionProfile": null,
+      "TokenCache": {
+        "CacheData": null
+      },
+      "ExtendedProperties": {}
+    }
+  },
+  "ExtendedProperties": {}
+}

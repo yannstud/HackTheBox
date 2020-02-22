@@ -3,16 +3,23 @@ docker manifest a good tuto to understant whats going on :
 	https://www.notsosecure.com/anatomy-of-a-hack-docker-registry/
 
 Steps: 
-	trouver la page 
+	trouver la page password admin:admin 
 	https://docker.registry.htb/v2
 	https://docker.registry.htb/v2/_catalog (display les instances de la V2)
 on y trouve : 
 	bolt-image
-
+```
 https://docker.registry.htb/v2/bolt-image/tags/list#
+```
 holly graal :
-	https://docker.registry.htb/v2/bolt-image/manifests/latest
-
+```
+https://docker.registry.htb/v2/bolt-image/manifests/latest
+```
+maintenant on peux telecharger les blobs:
+```
+https://docker.registry.htb/v2/bolt-image/blobs/sha256:3f12770883a63c833eab7652242d55a95aea6e2ecd09e21c29d7d7b354f3d4ee
+```
+MV ces blobs en .tar.gz dezip it et
 Dans les fichiers on peut trouver  GkOcz221Ftb3ugog surement un password
 
 (demande un password que je n'ai pas trouve pour acceder)
