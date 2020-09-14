@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Wed Sep  9 10:00:35 2020 as: nmap -p- -oA blunder_allports 10.10.10.191
+Nmap scan report for 10.10.10.191
+Host is up (0.085s latency).
+Not shown: 65533 filtered ports
+PORT   STATE  SERVICE
+21/tcp closed ftp
+80/tcp open   http
+
+# Nmap done at Wed Sep  9 10:02:33 2020 -- 1 IP address (1 host up) scanned in 117.97 seconds

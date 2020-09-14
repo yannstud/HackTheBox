@@ -1,0 +1,9 @@
+# Nmap 7.80 scan initiated Mon Sep  7 11:08:32 2020 as: nmap -Pn -p- -oA buff-allport 10.10.10.198
+Nmap scan report for 10.10.10.198
+Host is up (0.084s latency).
+Not shown: 65533 filtered ports
+PORT     STATE SERVICE
+7680/tcp open  pando-pub
+8080/tcp open  http-proxy
+
+# Nmap done at Mon Sep  7 11:11:00 2020 -- 1 IP address (1 host up) scanned in 148.76 seconds

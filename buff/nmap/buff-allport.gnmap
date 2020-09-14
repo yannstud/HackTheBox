@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Sep  7 11:08:32 2020 as: nmap -Pn -p- -oA buff-allport 10.10.10.198
+Host: 10.10.10.198 ()	Status: Up
+Host: 10.10.10.198 ()	Ports: 7680/open/tcp//pando-pub///, 8080/open/tcp//http-proxy///	Ignored State: filtered (65533)
+# Nmap done at Mon Sep  7 11:11:00 2020 -- 1 IP address (1 host up) scanned in 148.76 seconds

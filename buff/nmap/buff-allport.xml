@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Sep  7 11:08:32 2020 as: nmap -Pn -p- -oA buff-allport 10.10.10.198 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -oA buff-allport 10.10.10.198" start="1599469712" startstr="Mon Sep  7 11:08:32 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1599469712" endtime="1599469860"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.198" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="84374" rttvar="473" to="100000"/>
+</host>
+<runstats><finished time="1599469860" timestr="Mon Sep  7 11:11:00 2020" elapsed="148.76" summary="Nmap done at Mon Sep  7 11:11:00 2020; 1 IP address (1 host up) scanned in 148.76 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
