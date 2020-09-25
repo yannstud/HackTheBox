@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep 25 14:45:10 2020 as: nmap -sU -oA worker_udp 10.10.10.203
+Host: 10.10.10.203 ()	Status: Up
+Host: 10.10.10.203 ()	Status: Up
+# Nmap done at Fri Sep 25 14:46:36 2020 -- 1 IP address (1 host up) scanned in 85.72 seconds

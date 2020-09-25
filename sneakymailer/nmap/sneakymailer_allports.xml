@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Sep 14 13:26:01 2020 as: nmap -p- -oA sneakymailer_allports 10.10.10.197 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA sneakymailer_allports 10.10.10.197" start="1600082761" startstr="Mon Sep 14 13:26:01 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1600082761" endtime="1600082832"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.197" addrtype="ipv4"/>
+<hostnames>
+<hostname name="sneakycorp.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65528">
+<extrareasons reason="conn-refused" count="65528"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="84746" rttvar="112" to="100000"/>
+</host>
+<runstats><finished time="1600082832" timestr="Mon Sep 14 13:27:12 2020" elapsed="71.40" summary="Nmap done at Mon Sep 14 13:27:12 2020; 1 IP address (1 host up) scanned in 71.40 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

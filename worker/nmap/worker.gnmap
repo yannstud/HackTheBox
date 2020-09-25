@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Sep 25 14:23:52 2020 as: nmap -sC -sV -oA worker 10.10.10.203
+Host: 10.10.10.203 ()	Status: Up
+Host: 10.10.10.203 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 3690/open/tcp//svnserve//Subversion/	Ignored State: filtered (998)
+# Nmap done at Fri Sep 25 14:24:12 2020 -- 1 IP address (1 host up) scanned in 19.88 seconds
