@@ -1,0 +1,36 @@
+# Nmap 7.80 scan initiated Fri Nov  4 18:17:31 2022 as: nmap -sC -sV -oA shared shared.htb
+Nmap scan report for shared.htb (10.10.11.172)
+Host is up (0.024s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+80/tcp  open  http     nginx 1.18.0
+| http-robots.txt: 81 disallowed entries (15 shown)
+| /*?order= /*?tag= /*?id_currency= /*?search_query= 
+| /*?back= /*?n= /*&order= /*&tag= /*&id_currency= 
+| /*&search_query= /*&back= /*&n= /*controller=addresses 
+|_/*controller=address /*controller=authentication
+|_http-server-header: nginx/1.18.0
+|_http-title: Did not follow redirect to https://shared.htb/
+443/tcp open  ssl/http nginx 1.18.0
+| http-robots.txt: 81 disallowed entries (15 shown)
+| /*?order= /*?tag= /*?id_currency= /*?search_query= 
+| /*?back= /*?n= /*&order= /*&tag= /*&id_currency= 
+| /*&search_query= /*&back= /*&n= /*controller=addresses 
+|_/*controller=address /*controller=authentication
+|_http-server-header: nginx/1.18.0
+| http-title: Shared Shop
+|_Requested resource was https://shared.htb/index.php
+| ssl-cert: Subject: commonName=*.shared.htb/organizationName=HTB/stateOrProvinceName=None/countryName=US
+| Not valid before: 2022-03-20T13:37:14
+|_Not valid after:  2042-03-15T13:37:14
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Nov  4 18:17:46 2022 -- 1 IP address (1 host up) scanned in 15.00 seconds

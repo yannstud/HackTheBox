@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Nov  4 13:36:42 2022 as: nmap -sC -sC -oA metatwo metapress.htb
+Host: 10.10.11.186 (metapress.htb)	Status: Up
+Host: 10.10.11.186 (metapress.htb)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (997)
+# Nmap done at Fri Nov  4 13:37:31 2022 -- 1 IP address (1 host up) scanned in 49.53 seconds

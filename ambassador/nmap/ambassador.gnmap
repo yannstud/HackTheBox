@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Mon Nov 14 10:54:57 2022 as: nmap -sC -sV -oA ambassador 10.10.11.183
+Host: 10.10.11.183 ()	Status: Up
+Host: 10.10.11.183 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 3000/open/tcp//ppp?///, 3306/open/tcp//nagios-nsca//Nagios NSCA/	Ignored State: closed (996)
+# Nmap done at Mon Nov 14 10:56:36 2022 -- 1 IP address (1 host up) scanned in 99.17 seconds

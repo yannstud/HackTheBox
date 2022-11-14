@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Fri Nov  4 13:36:42 2022 as: nmap -sC -sC -oA metatwo metapress.htb
+Nmap scan report for metapress.htb (10.10.11.186)
+Host is up (0.024s latency).
+Not shown: 997 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-generator: WordPress 5.6.2
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+|_http-title: MetaPress &#8211; Official company site
+
+# Nmap done at Fri Nov  4 13:37:31 2022 -- 1 IP address (1 host up) scanned in 49.53 seconds

