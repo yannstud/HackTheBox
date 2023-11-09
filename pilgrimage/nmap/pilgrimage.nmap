@@ -1,0 +1,22 @@
+# Nmap 7.80 scan initiated Thu Nov  9 13:45:51 2023 as: nmap -sC -sV -oA pilgrimage pilgrimage.htb
+Nmap scan report for pilgrimage.htb (10.10.11.219)
+Host is up (0.087s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+80/tcp open  http    nginx 1.18.0
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-git: 
+|   10.10.11.219:80/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|_    Last commit message: Pilgrimage image shrinking service initial commit. # Please ...
+|_http-server-header: nginx/1.18.0
+|_http-title: Pilgrimage - Shrink Your Images
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov  9 13:46:02 2023 -- 1 IP address (1 host up) scanned in 11.05 seconds

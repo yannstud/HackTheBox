@@ -1,0 +1,35 @@
+dirsearch -u http://cozyhosting.htb/
+
+  _|. _ _  _  _  _ _|_    v0.4.2
+ (_||| _) (/_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 30 | Wordlist size: 10927
+
+Output File: /home/floky/.dirsearch/reports/cozyhosting.htb/-_23-11-08_12-45-17.txt
+
+Error Log: /home/floky/.dirsearch/logs/errors-23-11-08_12-45-17.log
+
+Target: http://cozyhosting.htb/
+
+[12:45:17] Starting:
+[12:45:20] 200 -    0B  - /Citrix//AccessPlatform/auth/clientscripts/cookies.js
+[12:45:22] 400 -  435B  - /\..\..\..\..\..\..\..\..\..\etc\passwd
+[12:45:22] 400 -  435B  - /a%5c.aspx
+[12:45:22] 200 -  634B  - /actuator
+[12:45:23] 200 -   10KB - /actuator/mappings
+[12:45:23] 200 -   48B  - /actuator/sessions
+[12:45:23] 200 -    5KB - /actuator/env
+[12:45:23] 200 -   15B  - /actuator/health
+[12:45:23] 200 -  124KB - /actuator/beans
+[12:45:23] 401 -   97B  - /admin
+[12:45:39] 200 -    0B  - /engine/classes/swfupload//swfupload.swf
+[12:45:39] 200 -    0B  - /engine/classes/swfupload//swfupload_f9.swf
+[12:45:39] 500 -   73B  - /error
+[12:45:39] 200 -    0B  - /examples/jsp/%252e%252e/%252e%252e/manager/html/
+[12:45:39] 200 -    0B  - /extjs/resources//charts.swf
+[12:45:41] 200 -    0B  - /html/js/misc/swfupload//swfupload.swf
+[12:45:41] 200 -   12KB - /index
+[12:45:45] 200 -    4KB - /login
+[12:45:45] 200 -    0B  - /login.wdm%2e
+[12:45:46] 204 -    0B  - /logout
+[12:45:53] 400 -  435B  - /servlet/%C0%AE%C0%AE%C0%AF
