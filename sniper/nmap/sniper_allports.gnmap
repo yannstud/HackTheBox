@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Fri Feb 21 12:14:43 2020 as: nmap -sC -sV -p- -oA nmap/sniper_allports 10.10.10.151
-Host: 10.10.10.151 ()	Status: Up
-Host: 10.10.10.151 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///, 49667/open/tcp//msrpc//Microsoft Windows RPC/	Ignored State: filtered (65530)
-# Nmap done at Fri Feb 21 12:18:02 2020 -- 1 IP address (1 host up) scanned in 199.35 seconds

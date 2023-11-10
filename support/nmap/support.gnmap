@@ -1,2 +1,0 @@
-# Nmap 7.80 scan initiated Mon Nov  7 13:57:51 2022 as: nmap -sC -sV -oA support 10.10.11.174
-# Nmap done at Mon Nov  7 13:57:55 2022 -- 1 IP address (0 hosts up) scanned in 3.41 seconds

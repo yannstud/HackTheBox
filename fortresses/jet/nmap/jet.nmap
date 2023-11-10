@@ -1,2 +1,0 @@
-# Nmap 7.80 scan initiated Fri Nov  4 18:14:47 2022 as: nmap -sC -sV -oA jet 10.13.37.10
-# Nmap done at Fri Nov  4 18:14:51 2022 -- 1 IP address (0 hosts up) scanned in 3.36 seconds

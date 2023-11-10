@@ -1,6 +1,0 @@
-# Nmap 7.70 scan initiated Sun Oct  7 17:28:16 2018 as: nmap -sU -oA udp 10.10.10.93
-Nmap scan report for 10.10.10.93
-Host is up (0.042s latency).
-All 1000 scanned ports on 10.10.10.93 are open|filtered
-
-# Nmap done at Sun Oct  7 17:29:00 2018 -- 1 IP address (1 host up) scanned in 44.08 seconds

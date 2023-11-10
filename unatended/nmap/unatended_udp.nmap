@@ -1,6 +1,0 @@
-# Nmap 7.60 scan initiated Mon Jul  8 15:45:46 2019 as: nmap -sU -oA unatended_udp 10.10.10.126
-Nmap scan report for 10.10.10.126
-Host is up (0.029s latency).
-All 1000 scanned ports on 10.10.10.126 are open|filtered
-
-# Nmap done at Mon Jul  8 15:46:17 2019 -- 1 IP address (1 host up) scanned in 30.82 seconds
