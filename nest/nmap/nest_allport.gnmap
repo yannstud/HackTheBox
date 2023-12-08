@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Wed Jan 29 11:39:21 2020 as: nmap -p- -sC -sV -Pn -oA nest_allport 10.10.10.178
-Host: 10.10.10.178 ()	Status: Up
-Host: 10.10.10.178 ()	Ports: 445/open/tcp//microsoft-ds?///, 4386/open/tcp//unknown///	Ignored State: filtered (65533)
-# Nmap done at Wed Jan 29 11:44:15 2020 -- 1 IP address (1 host up) scanned in 294.48 seconds
