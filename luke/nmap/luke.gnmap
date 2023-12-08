@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Sun Jul  7 19:41:32 2019 as: nmap -sC -Pn -sV -oA luke 10.10.10.137
-Host: 10.10.10.137 ()	Status: Up
-Host: 10.10.10.137 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3+ (ext.1)/, 22/open/tcp//ssh?///	Ignored State: closed (998)
-# Nmap done at Sun Jul  7 19:44:56 2019 -- 1 IP address (1 host up) scanned in 203.75 seconds

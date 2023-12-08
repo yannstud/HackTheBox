@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Mon Jul 22 10:59:38 2019 as: nmap -sC -sV -oA craft 10.10.10.110
-Host: 10.10.10.110 ()	Status: Up
-Host: 10.10.10.110 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u5 (protocol 2.0)/	Ignored State: closed (999)
-# Nmap done at Mon Jul 22 10:59:42 2019 -- 1 IP address (1 host up) scanned in 3.60 seconds

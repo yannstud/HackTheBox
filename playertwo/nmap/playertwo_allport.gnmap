@@ -1,4 +1,0 @@
-# Nmap 7.60 scan initiated Sun Dec 15 17:16:46 2019 as: nmap -p- -oA playertwo_allport player2.htb
-Host: 10.10.10.170 (player2.htb)	Status: Up
-Host: 10.10.10.170 (player2.htb)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 8545/open/tcp/////	Ignored State: closed (65532)
-# Nmap done at Sun Dec 15 17:17:31 2019 -- 1 IP address (1 host up) scanned in 44.70 seconds

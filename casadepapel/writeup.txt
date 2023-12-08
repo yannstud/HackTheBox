@@ -1,4 +1,0 @@
-qrcode :
-	otpauth://hotp/Token?secret=LNEFIQDXKYZCIYTYOESEGXLHH56VUTDX&algorithm=SHA1
-
-

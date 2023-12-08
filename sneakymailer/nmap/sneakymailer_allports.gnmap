@@ -1,4 +1,0 @@
-# Nmap 7.80 scan initiated Mon Sep 14 13:26:01 2020 as: nmap -p- -oA sneakymailer_allports 10.10.10.197
-Host: 10.10.10.197 (sneakycorp.htb)	Status: Up
-Host: 10.10.10.197 (sneakycorp.htb)	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 143/open/tcp//imap///, 993/open/tcp//imaps///, 8080/open/tcp//http-proxy///	Ignored State: closed (65528)
-# Nmap done at Mon Sep 14 13:27:12 2020 -- 1 IP address (1 host up) scanned in 71.40 seconds
