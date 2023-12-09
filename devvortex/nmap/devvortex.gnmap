@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Sat Dec  9 00:44:59 2023 as: nmap -sC -sV -oA devvortex devvortex.htb
+Host: 10.10.11.242 (devvortex.htb)	Status: Up
+Host: 10.10.11.242 (devvortex.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/	Ignored State: closed (998)
+# Nmap done at Sat Dec  9 00:45:07 2023 -- 1 IP address (1 host up) scanned in 7.92 seconds
