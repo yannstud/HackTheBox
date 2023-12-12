@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Mon Dec 11 12:36:00 2023 as: nmap -sC -sV -oA clicker -p- clicker.htb
+Host: 10.10.11.232 (clicker.htb)	Status: Up
+Host: 10.10.11.232 (clicker.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.52 ((Ubuntu))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 2049/open/tcp//nfs_acl//3 (RPC #100227)/, 35889/open/tcp//status//1 (RPC #100024)/, 38897/open/tcp//mountd//1-3 (RPC #100005)/, 40965/open/tcp//nlockmgr//1-4 (RPC #100021)/, 42777/open/tcp//mountd//1-3 (RPC #100005)/, 45677/open/tcp//mountd//1-3 (RPC #100005)/	Ignored State: closed (65526)
+# Nmap done at Mon Dec 11 12:36:29 2023 -- 1 IP address (1 host up) scanned in 29.44 seconds
