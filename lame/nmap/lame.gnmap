@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Dec 12 15:28:19 2023 as: nmap -sC -sV -Pn -oA lame 10.10.10.3
+Host: 10.10.10.3 ()	Status: Up
+Host: 10.10.10.3 ()	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 22/open/tcp//ssh//OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 3.0.20-Debian (workgroup: WORKGROUP)/	Ignored State: filtered (996)
+# Nmap done at Tue Dec 12 15:29:16 2023 -- 1 IP address (1 host up) scanned in 56.13 seconds
