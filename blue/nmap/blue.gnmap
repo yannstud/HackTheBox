@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Fri Dec 15 15:40:09 2023 as: nmap -sC -sV -oA blue 10.10.10.40
+Host: 10.10.10.40 ()	Status: Up
+Host: 10.10.10.40 ()	Ports: 135/open/tcp//msrpc?///, 139/open/tcp//netbios-ssn?///, 445/open/tcp//microsoft-ds//Windows 7 Professional 7601 Service Pack 1 microsoft-ds/, 49152/open/tcp/////, 49153/open/tcp/////, 49154/open/tcp/////, 49155/open/tcp/////, 49156/open/tcp/////	Ignored State: closed (992)
+# Nmap done at Fri Dec 15 15:41:29 2023 -- 1 IP address (1 host up) scanned in 79.43 seconds
