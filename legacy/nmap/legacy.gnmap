@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Fri Dec 15 15:05:56 2023 as: nmap -sC -sV -oA legacy 10.10.10.4
+Host: 10.10.10.4 ()	Status: Up
+Host: 10.10.10.4 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Windows XP microsoft-ds/	Ignored State: closed (997)
+# Nmap done at Fri Dec 15 15:06:13 2023 -- 1 IP address (1 host up) scanned in 17.02 seconds
