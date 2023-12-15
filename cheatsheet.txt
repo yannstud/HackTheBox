@@ -156,9 +156,6 @@ sessions -i 1  					-- interact with sessions --
 ctrl + z 					-- background the meterpreter so we can use other tools --
 use post/multi/recon/local_exploit_suggester	-- windows exploit suggester (session number need to be added to the options) --
 
- 
-
-
 
 
 --------------------------DIVERS------------------------------
