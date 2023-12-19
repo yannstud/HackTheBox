@@ -169,6 +169,8 @@ ctrl + z
 windows exploit suggester (session number need to be added to the options)
 ```
 use post/multi/recon/local_exploit_suggester
+set session [session_nb]
+run
 ```
 
 
@@ -181,6 +183,11 @@ LDAP injection tester username avec ) si error
 ```
 username=* pass=*)(& 
 ```
+### web scanner 
+```
+nikto -host url
+```
+
 ### nosql
 Regex to use until you have the good size then inser chars before the '.' who means "Everything"
 ```
